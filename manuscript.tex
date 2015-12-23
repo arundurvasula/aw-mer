@@ -1,0 +1,144 @@
+\documentclass[10pt,a4paper]{article}
+
+%% packages
+\usepackage{color}
+\usepackage{pgf}
+\usepackage[margin=1in]{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{cite}
+\usepackage{natbib}
+\usepackage{authblk}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[colorlinks=true,
+            linkcolor=red,
+            urlcolor=blue,
+            citecolor=gray]{hyperref}
+ 
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+           
+\lstset{frame=tb,
+  language=bash,
+  frame=none,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+            
+\newcommand{\X}{\textcolor{red}{\bf X}}
+
+\newcommand{\og}{\emph{O. glumaepatula }}
+
+\title{More than one Author with different Affiliations}
+\author[1,$\dag$]{Arun Durvasula}
+\author[2,$\dag$]{Paul J. Hoffman}
+\author[1]{Tyler V. Kent}
+\author[2]{Chaochih Liu}
+\author[2]{Thomas J. Y. Kono}
+\author[2]{Peter L. Morrell}
+\author[1,3,*]{Jeffrey Ross-Ibarra}
+\affil[1]{Department of Plant Sciences, University of California, Davis, CA 95616}
+\affil[2]{Department of Agronomy and Plant Genetics, University of Minnesota, St. Paul, MN 55108}
+\affil[3]{Center for Population Biology and Genome Center, University of California, Davis, CA 95616}
+\affil[$\dag$]{These authors contributed equally.}
+\affil[*]{email: rossibarra@ucdavis.edu}
+
+
+\renewcommand\Authands{ and }
+
+\begin{document}
+
+\title{ANGSD-wrapper: utilities for analyzing next generation sequencing data}
+\maketitle
+
+\begin{abstract}
+High throughput sequencing has changed many aspects of population genetics, molecular ecology, and related fields, affecting both experimental design and data analysis.
+The software package ANGSD allows users to perform a number of population genetic analyses on high-throughput sequencing data. 
+The package is specifically designed to produce more accurate results for samples with low sequencing depth, but it handles a wide array of sampling and experimental designs and makes use of full genome data.
+Here we present ANGSD-wrapper, a user-friendly interface to ANGSD.
+ANGSD-wrapper includes a number of 'wrapper' scripts that facilitate configuration and execution of multi-step analyses. ANGSD-wrapper also provides interactive graphing of ANGSD results, thus enhancing data exploration.
+We demonstrate the usefulness of ANGSD-wrapper by analyzing resequencing data from populations of wild and domesticated \textit{Zea}. ANGSD-wrapper is freely available from \url{https://github.com/mojaveazure/angsd-wrapper}.
+\end{abstract}
+
+\section*{Introduction}
+
+High throughput sequencing has revolutionized evolutionary genetics, allowing researchers to quickly assay large numbers of individuals or survey fine-scale patterns of variation along the genome.  
+Application of these methods has led to changes in both experimental design and data analysis \citep{ekblom2011applications}.
+Many of the popular software packages used by researchers \citep[see][]{excoffier2006computer}  were not designed to handle these novel data types or efficiently analyze the large volumes of data now being generated. A particular challenge with short read sequencing has been higher per base pair rates of errors and missing data.
+
+A number of tools have recently been published to handle high throughput sequencing data \citep{garrigan2013popbam, purcell2007plink, danecek2011variant, hutter2006genome}, but the majority of these either make limiting assumptions about the data (e.g., all sites have been sequenced, all genomes are haploid, sequencing is to sufficient depth, all individuals are outcrossing) or are specialized tools offering a narrow set of analysis options. 
+Korneliussen et al. \citep{korneliussen2014angsd} recently published the software package ANGSD, which enables users to flexibly perform a large number of common population genetic analyses, including calculating the ABBA BABA D-statistic, site frequency spectrum estimation \citep{pmid22911679}, and neutrality test statistics \citep{korneliussen_calculation_2013}
+One of the most important features of ANGSD is that most analyses are performed directly on genotype likelihoods, freeing users from the requirement of calling variants or genotypes and permitting analysis of low-coverage data or sequences with large amounts of missing data. 
+
+Here we present ANGSD-wrapper, a user-friendly interface to ANGSD. 
+ANGSD-wrapper takes the form of a set of configuration files and 'wrapper' scripts (Figure \ref{fig:supp2}) that streamline the execution of multi-step pipelines inherent in ANGSD as well as pipelines involving related programs such as ngsPopGen, ngsF\citep{vieira2013estimating}, and ngsAdmix \citep{pmid24026093}.
+Because the large volume of data associated with high throughput sequence analysis is often difficult to explore by hand, ANGSD-wrapper also provides a suite of interactive visualization tools to plot results and explore patterns at multiple scales.  
+We demonstrate some of the analyses possible using ANGSD-wrapper in an initial exploration of low-coverage whole-genome sequence data from populations of the endangered wild rice species \og  and compare to the domesticated \emph{Oryza sativa}.
+ANGSD-wrapper is freely available from \url{https://github.com/mojaveazure/angsd-wrapper}.
+
+\section*{Methods}
+ANGSD-wrapper is a set of configuration files and scripts written in the Bash UNIX shell.  
+The scripts can be run either on a standalone computer with a UNIX terminal, or on computing clusters where they can be submitted to a queuing system such as SGE \citep{Microsystems):2001:SGE:560889.792378}, Slurm \citep{Jette02slurm:simple} or TORQUE \citep{Staples:2006:TRM:1188455.1188464}.  
+An installation of the statistical software R \citep{Rcitation} is required to make use of the visualization tools incorporated in ANGSD-wrapper.  
+The visualization portion of ANGSD-wrapper also requires installation of the R packages shiny \citep{shiny}, genomeIntervals \citep{genomeIntervals}, and ape \citep{APE}.
+
+ANGSD-wrapper is divided into scripts associated with analytical approaches implemented in ANGSD and associated software. ANGSD-wrapper provides a common configuration file, common.conf, which  holds variables that are likely to remain constant across analyses, including identifiers for chromosomal regions and the paths to project directories.
+In ANGSD-wrapper, each method is self-contained in a shell script which uses information from the common configuration file and a method-specific configuration file. 
+Each analysis is run using a simple command:
+
+\begin{lstlisting}
+$ angsd-wrapper <method> <configuration_file>
+\end{lstlisting}
+
+A detailed flowchart of each of these workflows is shown in Figure \ref{fig:supp2}, and additional details, documentation, a tutorial, and a wiki can be found on the GitHub page: \url{https://github.com/mojaveazure/angsd-wrapper/wiki}.
+
+The visualization software included with ANGSD-wrapper is contained within
+it's own directory called shinyGraphing.
+This application must be started in R and can be accessed locally from a web browser. This software provides a graphical user interface (GUI) to quickly and interactively plot results obtained from ANGSD-wrapper.  
+Each tab in the GUI contains plots for different ANGSD methods.
+
+In order to use the plotting software, the user navigates to the desired tab and uploads the appropriate file of results. 
+The Shiny server automatically parses ANGSD output files and creates the resulting plot(s) (Figure \ref{fig:theta}), which can be saved using the browser's built in image saving capabilities. 
+
+%\begin{figure}
+%\centering
+%\includegraphics[width=130mm]{theta_rice_chr12.png}
+%\caption{A visualization of Watterson's $\theta$ estimated by ANGSD across chromosome 12 of \og using ANGSD-wrapper\label{fig:theta} }%\pjh{capitalized 'ANGSD' in ANGSD-wrapper}
+%\end{figure}
+
+\section*{Results}
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{figures/MainTextWorkflow.pdf}
+\caption{Example analysis workflow diagram.}
+\label{fig:workflow}
+\end{figure}
+
+\section*{Discussion}
+
+\section*{Conclusions}
+Our software ANGSD-wrapper provides an intuitive and easy-to-use interface to employ the powerful and flexible suite of population genetic analyses developed in ANGSD \citep{korneliussen2014angsd} and permits the exploration of genome-scale results through interactive visualization.
+ANGSD-wrapper is under active development, and work is already underway on a new release that will incorporate updates to the ANGSD software package.  
+
+\section*{Acknowledgements}
+We acknowledge funding support from the US National Science Foundation (IOS-1238014 to JRI and IOS-1339393 to PLM) and funding from the UC Davis Plant Sciences Department.  We thank members of the Ross-Ibarra and Morrell labs for discussion and software testing. We thank Eric Fuchs for access to the test dataset. We thank the authors of ANGSD and related programs for answering questions, particularly Matteo Fumagalli and Filipe Vieira. Finally, we would like to thank Felix Andrews for statistical advice, although we did not follow it. 
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\input{supp.tex}
+
+\end{document}

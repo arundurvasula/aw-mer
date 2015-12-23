@@ -1,0 +1,110 @@
+\begin{thebibliography}{10}
+
+\bibitem{ekblom2011applications}
+Robert Ekblom and Juan Galindo.
+\newblock Applications of next generation sequencing in molecular ecology of
+  non-model organisms.
+\newblock {\em Heredity}, 107(1):1--15, 2011.
+
+\bibitem{excoffier2006computer}
+Laurent Excoffier and Gerald Heckel.
+\newblock Computer programs for population genetics data analysis: a survival
+  guide.
+\newblock {\em Nature Reviews Genetics}, 7(10):745--758, 2006.
+
+\bibitem{garrigan2013popbam}
+Daniel Garrigan.
+\newblock Popbam: tools for evolutionary analysis of short read sequence
+  alignments.
+\newblock {\em Evolutionary bioinformatics online}, 9:343, 2013.
+
+\bibitem{purcell2007plink}
+Shaun Purcell, Benjamin Neale, Kathe Todd-Brown, Lori Thomas, Manuel~AR
+  Ferreira, David Bender, Julian Maller, Pamela Sklar, Paul~IW De~Bakker,
+  Mark~J Daly, et~al.
+\newblock Plink: a tool set for whole-genome association and population-based
+  linkage analyses.
+\newblock {\em The American Journal of Human Genetics}, 81(3):559--575, 2007.
+
+\bibitem{danecek2011variant}
+Petr Danecek, Adam Auton, Goncalo Abecasis, Cornelis~A Albers, Eric Banks,
+  Mark~A DePristo, Robert~E Handsaker, Gerton Lunter, Gabor~T Marth, Stephen~T
+  Sherry, et~al.
+\newblock The variant call format and vcftools.
+\newblock {\em Bioinformatics}, 27(15):2156--2158, 2011.
+
+\bibitem{hutter2006genome}
+Stephan Hutter, Albert~J Vilella, and Julio Rozas.
+\newblock Genome-wide dna polymorphism analyses using variscan.
+\newblock {\em BMC bioinformatics}, 7(1):409, 2006.
+
+\bibitem{korneliussen2014angsd}
+Thorfinn~S Korneliussen, Anders Albrechtsen, and Rasmus Nielsen.
+\newblock Angsd: analysis of next generation sequencing data.
+\newblock {\em BMC bioinformatics}, 15(1):356, 2014.
+
+\bibitem{pmid22911679}
+R.~Nielsen, T.~Korneliussen, A.~Albrechtsen, Y.~Li, and J.~Wang.
+\newblock {{S}{N}{P} calling, genotype calling, and sample allele frequency
+  estimation from {N}ew-{G}eneration {S}equencing data}.
+\newblock {\em PLoS ONE}, 7(7):e37558, 2012.
+
+\bibitem{korneliussen_calculation_2013}
+Thorfinn Korneliussen, Ida Moltke, Anders Albrechtsen, and Rasmus Nielsen.
+\newblock Calculation of tajima's d and other neutrality test statistics from
+  low depth next-generation sequencing data.
+\newblock {\em {BMC} Bioinformatics}, 14(1):289, 2013.
+
+\bibitem{vieira2013estimating}
+Filipe~G Vieira, Matteo Fumagalli, Anders Albrechtsen, and Rasmus Nielsen.
+\newblock Estimating inbreeding coefficients from ngs data: Impact on genotype
+  calling and allele frequency estimation.
+\newblock {\em Genome research}, 23(11):1852--1861, 2013.
+
+\bibitem{pmid24026093}
+L.~Skotte, T.~S. Korneliussen, and A.~Albrechtsen.
+\newblock {{E}stimating {I}ndividual {A}dmixture {P}roportions from {N}ext
+  {G}eneration {S}equencing {D}ata}.
+\newblock {\em Genetics}, Sep 2013.
+
+\bibitem{Microsystems):2001:SGE:560889.792378}
+W.~Gentzsch.
+\newblock Sun grid engine: Towards creating a compute power grid.
+\newblock In {\em Proceedings of the 1st International Symposium on Cluster
+  Computing and the Grid}, CCGRID '01, pages 35--, Washington, DC, USA, 2001.
+  IEEE Computer Society.
+
+\bibitem{Jette02slurm:simple}
+Morris~A. Jette, Andy~B. Yoo, and Mark Grondona.
+\newblock Slurm: Simple linux utility for resource management.
+\newblock In {\em In Lecture Notes in Computer Science: Proceedings of Job
+  Scheduling Strategies for Parallel Processing (JSSPP) 2003}, pages 44--60.
+  Springer-Verlag, 2002.
+
+\bibitem{Staples:2006:TRM:1188455.1188464}
+Garrick Staples.
+\newblock Torque resource manager.
+\newblock In {\em Proceedings of the 2006 ACM/IEEE Conference on
+  Supercomputing}, SC '06, New York, NY, USA, 2006. ACM.
+
+\bibitem{Rcitation}
+{R Core Team}.
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2014.
+
+\bibitem{shiny}
+Winston Chang, Joe Cheng, JJ~Allaire, Yihui Xie, and Jonathan McPherson.
+\newblock {\em shiny: Web Application Framework for R}, 2015.
+\newblock R package version 0.11.1.
+
+\bibitem{genomeIntervals}
+Julien Gagneur, Joern Toedling, Richard Bourgon, and Nicolas Delhomme.
+\newblock {\em genomeIntervals: Operations on genomic intervals}, 2015.
+\newblock R package version 1.22.1.
+
+\bibitem{APE}
+E.~Paradis, J.~Claude, and K.~Strimmer.
+\newblock A{PE}: analyses of phylogenetics and evolution in {R} language.
+\newblock {\em Bioinformatics}, 20:289--290, 2004.
+
+\end{thebibliography}
