@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 JAN 2016 00:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 JAN 2016 02:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -686,6 +686,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 77.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 88.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 95.
  [1
@@ -696,37 +698,90 @@ Overfull \hbox (0.39398pt too wide) in paragraph at lines 124--128
 a-lyt-i-cal ap-proaches im-ple-mented in ANGSD
  []
 
-<figures/ThetasPlot.png, id=60, 1406.25375pt x 618.05907pt>
+<figures/ThetasPlot.png, id=62, 1406.25375pt x 618.05907pt>
 File: figures/ThetasPlot.png Graphic file (type png)
 
 <use figures/ThetasPlot.png>
 Package pdftex.def Info: figures/ThetasPlot.png used on input line 144.
 (pdftex.def)             Requested size: 369.88582pt x 162.55887pt.
 
-<figures/MainTextWorkflow.pdf, id=62, 801.3403pt x 967.9628pt>
+<figures/MainTextWorkflow.pdf, id=64, 801.3403pt x 967.9628pt>
 File: figures/MainTextWorkflow.pdf Graphic file (type pdf)
 
 <use figures/MainTextWorkflow.pdf>
 Package pdftex.def Info: figures/MainTextWorkflow.pdf used on input line 152.
 (pdftex.def)             Requested size: 452.9679pt x 547.16586pt.
 
-<figures/figure3big.pdf, id=63, 1173.69093pt x 753.09285pt>
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+<figures/figure3big.pdf, id=65, 1173.69093pt x 753.09285pt>
 File: figures/figure3big.pdf Graphic file (type pdf)
 
 <use figures/figure3big.pdf>
 Package pdftex.def Info: figures/figure3big.pdf used on input line 159.
 (pdftex.def)             Requested size: 452.9679pt x 290.63687pt.
 
-<figures/mt4labeled.png, id=64, 689.57625pt x 296.10625pt>
+<figures/mt4labeled.png, id=66, 689.57625pt x 296.10625pt>
 File: figures/mt4labeled.png Graphic file (type png)
 
 <use figures/mt4labeled.png>
 Package pdftex.def Info: figures/mt4labeled.png used on input line 166.
 (pdftex.def)             Requested size: 452.9679pt x 194.509pt.
- [2] (./manuscript.bbl [3 <./figures/ThetasPlot.png>] [4 <./figures/MainTextWor
-kflow.pdf>] [5 <./figures/figure3big.pdf> <./figures/mt4labeled.png>]) (./supp.
-tex
-<figures/Wiki_Workflow.pdf, id=176, 1565.1935pt x 1895.42725pt>
+
+./manuscript.tex:167: Undefined control sequence.
+<argument> ...t Zea mays} spp. {mexicana} (\texit 
+                                                  {mex}) with K=4 source pop...
+l.167 ...ns. For a list of samples see Table \X. }
+                                                  
+? 
+./manuscript.tex:167: Undefined control sequence.
+<argument> ...t Zea mays} spp. {mexicana} (\texit 
+                                                  {mex}) with K=4 source pop...
+l.167 ...ns. For a list of samples see Table \X. }
+                                                  
+? 
+./manuscript.tex:167: Undefined control sequence.
+<argument> ...t Zea mays} spp. {mexicana} (\texit 
+                                                  {mex}) with K=4 source pop...
+l.167 ...ns. For a list of samples see Table \X. }
+                                                  
+? 
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+
+LaTeX Warning: Marginpar on page 2 moved.
+
+[2]
+Overfull \hbox (2.75385pt too wide) in paragraph at lines 175--180
+[]\OT1/cmr/m/n/10 Consistent with pre-vi-ous re-sults [[]], we show that the ma
+ize SFS is skewed to-wards more intermediate-
+ []
+
+
+LaTeX Warning: Marginpar on page 3 moved.
+
+
+LaTeX Warning: Marginpar on page 3 moved.
+
+
+LaTeX Warning: Marginpar on page 3 moved.
+
+
+LaTeX Warning: Marginpar on page 3 moved.
+
+
+LaTeX Warning: Marginpar on page 3 moved.
+
+
+LaTeX Warning: Marginpar on page 3 moved.
+
+[3 <./figures/ThetasPlot.png>] [4 <./figures/MainTextWorkflow.pdf>] [5 <./figur
+es/figure3big.pdf> <./figures/mt4labeled.png>] (./manuscript.bbl [6
+
+])
+(./supp.tex <figures/Wiki_Workflow.pdf, id=202, 1565.1935pt x 1895.42725pt>
 File: figures/Wiki_Workflow.pdf Graphic file (type pdf)
 
 <use figures/Wiki_Workflow.pdf>
@@ -737,42 +792,62 @@ s been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.7 ...or all methods available in ANGSD-wrapper.}
+                                                  
+<figures/admixture.png, id=203, 683.55376pt x 808.01875pt>
+File: figures/admixture.png Graphic file (type png)
+
+<use figures/admixture.png>
+Package pdftex.def Info: figures/admixture.png used on input line 13.
+(pdftex.def)             Requested size: 452.9679pt x 535.45166pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14 ...=2 (top), K=3 (middle), and K=4 (bottom).}
                                                   )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
- [6] [7 <./figures/Wiki_Workflow.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
+ [7] [8 <./figures/Wiki_Workflow.pdf>] [9 <./figures/admixture.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
  (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 16274 strings out of 493315
- 287451 string characters out of 6137904
- 371541 words of memory out of 5000000
- 19387 multiletter control sequences out of 15000+600000
- 9632 words of font info for 35 fonts, out of 8000000 for 9000
+ 16433 strings out of 493315
+ 291087 string characters out of 6137904
+ 406495 words of memory out of 5000000
+ 19528 multiletter control sequences out of 15000+600000
+ 10250 words of font info for 37 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,10n,53p,506b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on manuscript.pdf (7 pages, 645253 bytes).
+ 49i,10n,76p,550b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2013/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on manuscript.pdf (9 pages, 731468 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 229 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 339 PDF objects out of 1000 (max. 8388607)
+ 268 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
