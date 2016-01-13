@@ -166,24 +166,26 @@ The Shiny server automatically parses ANGSD output files and creates the resulti
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{figures/mt4labeled.png}
-\caption{Admixture analysis for {\it Zea mays} spp. {\it mays}, {\it Zea mays} spp. {\it parviglumas}, and {\it Zea mays} spp. {mexicana} (\texit{mex}) with K=4 source populations. For a list of samples see Table \X. }
+\caption{Admixture analysis for {\it Zea mays} spp. {\it mays}, {\it Zea mays} spp. {\it parviglumas}, and {\it Zea mays} spp. {mexicana} (\texit{mex}) with K=4 source populations. For a list of samples see Table \ref{tab:samples}. }
 \label{fig:admixture}
 \end{figure}
 
-\jri{change Mex to mex and make italics in figure axis} As a demonstration of analyses in ANGSD-wrapper, we explore patterns of diversity in a single genomic region of a subset of domesticated maize and wild teosinte. We used resequenced samples from the HapMap2 project  and calculated summary statistics using a 10 megabase region on chromosome 10.\jri{cite Chia 2012 instead. include region \& mean depth, supp. table w/ sample names in order from fig. \& depth. include download link.}
+% \jri{change Mex to mex and make italics in figure axis} done
 
-We first use \X\ to estimate the site frequency spectrum (SFS) of both maize and its wild progenitor \textit{Zea mays} ssp. \textit{parviglumis}, assuming an inbreeding coefficient of $F=1$ since these are all highly inbred samples. %\jri{do we worry that fig. 3 not graphs directly from A-W?} % noted this in the figure legend
+As a demonstration of analyses in ANGSD-wrapper, we explore patterns of diversity in a single genomic region of a subset of domesticated maize and wild teosinte. We used resequenced samples from the HapMap2 project  and calculated summary statistics using a 10 megabase region on chromosome 10 \citep{chia2012maize} .\jri{include download link.}
 
-Consistent with previous results \citep{hufford2012comparative}, we show that the maize SFS is skewed towards more intermediate-frequency variants (Figure \ref{fig:figure3}A-B), likely a result of the bottleneck associated with maize domestication.\jri{cite Tim} 
-We find further evidence of the effect of domestication using \X, revealing lower levels overall levels of diversity in maize (Figure \ref{fig:figure3}C).\jri{fill in \X's with which A-W script we used. probably need to modify this to mention Tripsacum and generation of the ancestral seq. and which A-W script we used for that.}
-Using \X, we then scan our example region for windows with elevated differentiation between maize and teosinte. 
+We first use the SFS method to estimate the site frequency spectrum (SFS) of both maize and its wild progenitor \textit{Zea mays} ssp. \textit{parviglumis}, assuming an inbreeding coefficient of $F=1$ since these are all highly inbred samples. %\jri{do we worry that fig. 3 not graphs directly from A-W?} % noted this in the figure legend, SFSes are basically from AW, just colors changed. In the future should we add color picker for SFS?
+
+Consistent with previous results \citep{hufford2012comparative}, we show that the maize SFS is skewed towards more intermediate-frequency variants (Figure \ref{fig:figure3}A-B), likely a result of the bottleneck associated with maize domestication \citep{Beissinger031666}.
+We find further evidence of the effect of domestication using the Thetas method, revealing lower levels overall levels of diversity in maize (Figure \ref{fig:figure3}C). These results use Tripsacum as an ancestral sequence, which was generated using the Ancestral Sequence method in ANGSD-wrapper. %\jri{fill in \X's with which A-W script we used. probably need to modify this to mention Tripsacum and generation of the ancestral seq. and which A-W script we used for that.} done
+Using the 2DSFS method, which includes an $F_{ST}$ calculation, we then scan our example region for windows with elevated differentiation between maize and teosinte. 
 The mean $F_{ST}$ in this region is \X, close to the genome-wide reported value of \X \citep{hufford2012comparative}.\jri{change if not true}  
 The \X windows in the 1\% tail of highest $F_{ST}$ values include genes several genes identified as potential targets of selection during domestication in \citep{hufford2012comparative} \jri{see supp tables in Huff. make supp. table of genes in top 1\%. sorry to add, but this is cool \& demonstrates more stuff A-W can do. don't need a graph}
 
 Finally, we include two samples of the related wild teosinte \textit{Zea mays} ssp. {mexicana} to assess evidence for admixture.  
 Figure \ref{fig:admixture} identifies structure within the domesticated maize separating three high-latitude temperate landraces from the other tropical accessions. 
-We find no evidence of admixture between these lowland maize samples and  ssp. {mexicana}, consistent with an independent analysis using SNP genotyping \jri{cite Hufford 2013 plos gen}.
-\textit{Zea mays} ssp. {mexicana} clusters into its own group, along with a single accession of ssp. {parviglumis} collected from region in which many teosinte populations appear to be the result of admixture between the two subspecies \jri{cite Fang 2012}.  A single  ssp. {parviglumis} accession from the Northern extent of the range does not appear to be well-classified with these data, likely due to our relatively limited geographic and genomic sampling.
+We find no evidence of admixture between these lowland maize samples and  ssp. {mexicana}, consistent with an independent analysis using SNP genotyping \citep{hufford2013genomic}.
+\textit{Zea mays} ssp. {mexicana} clusters into its own group, along with a single accession of ssp. {parviglumis} collected from region in which many teosinte populations appear to be the result of admixture between the two subspecies \citep{fang2012megabase}.  A single  ssp. {parviglumis} accession from the Northern extent of the range does not appear to be well-classified with these data, likely due to our relatively limited geographic and genomic sampling.
 
 \section*{Conclusions}
 Our software ANGSD-wrapper provides an intuitive and easy-to-use interface to employ the powerful and flexible suite of population genetic analyses developed in ANGSD \citep{korneliussen2014angsd} and permits the exploration of genome-scale results through interactive visualization.

@@ -112,6 +112,13 @@ E.~Paradis, J.~Claude, and K.~Strimmer.
 \newblock A{PE}: analyses of phylogenetics and evolution in {R} language.
 \newblock {\em Bioinformatics}, 20:289--290, 2004.
 
+\bibitem{chia2012maize}
+Jer-Ming Chia, Chi Song, Peter~J Bradbury, Denise Costich, Natalia de~Leon,
+  John Doebley, Robert~J Elshire, Brandon Gaut, Laura Geller, Jeffrey~C
+  Glaubitz, et~al.
+\newblock Maize hapmap2 identifies extant variation from a genome in flux.
+\newblock {\em Nature genetics}, 44(7):803--807, 2012.
+
 \bibitem{hufford2012comparative}
 Matthew~B Hufford, Xun Xu, Joost Van~Heerwaarden, Tanja Pyh{\"a}j{\"a}rvi,
   Jer-Ming Chia, Reed~A Cartwright, Robert~J Elshire, Jeffrey~C Glaubitz,
@@ -119,5 +126,25 @@ Matthew~B Hufford, Xun Xu, Joost Van~Heerwaarden, Tanja Pyh{\"a}j{\"a}rvi,
 \newblock Comparative population genomics of maize domestication and
   improvement.
 \newblock {\em Nature genetics}, 44(7):808--811, 2012.
+
+\bibitem{Beissinger031666}
+Timothy~Mathes Beissinger, Li~Wang, Kate Crosby, Arun Durvasula, Matthew~B
+  Hufford, and Jeff Ross-Ibarra.
+\newblock Recent demography drives changes in linked selection across the maize
+  genome.
+\newblock {\em bioRxiv}, 2015.
+
+\bibitem{hufford2013genomic}
+Matthew~B Hufford, Pesach Lubinksy, Tanja Pyh{\"a}j{\"a}rvi, Michael~T
+  Devengenzo, Norman~C Ellstrand, and Jeffrey Ross-Ibarra.
+\newblock The genomic signature of crop-wild introgression in maize.
+\newblock {\em PLoS genetics}, 2013.
+
+\bibitem{fang2012megabase}
+Zhou Fang, Tanja Pyh{\"a}j{\"a}rvi, Allison~L Weber, R~Kelly Dawe, Jeffrey~C
+  Glaubitz, Jos{\'e} de Jesus~S{\'a}nchez Gonz{\'a}lez, Claudia Ross-Ibarra,
+  John Doebley, Peter~L Morrell, and Jeffrey Ross-Ibarra.
+\newblock Megabase-scale inversion polymorphism in the wild ancestor of maize.
+\newblock {\em Genetics}, 191(3):883--894, 2012.
 
 \end{thebibliography}
