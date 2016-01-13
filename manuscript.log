@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  11 JAN 2016 18:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 JAN 2016 00:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -494,37 +494,119 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
+(/usr/local/texlive/2013/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2012/07/25 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+\XKV@depth=\count124
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen158
+\pgffor@skip=\dimen159
+\pgffor@stack=\toks27
+\pgffor@toks=\toks28
+))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count125
+\pgfplotmarksize=\dimen160
+)
+\tikz@lastx=\dimen161
+\tikz@lasty=\dimen162
+\tikz@lastxsaved=\dimen163
+\tikz@lastysaved=\dimen164
+\tikzleveldistance=\dimen165
+\tikzsiblingdistance=\dimen166
+\tikz@figbox=\box38
+\tikz@tempbox=\box39
+\tikztreelevel=\count126
+\tikznumberofchildren=\count127
+\tikznumberofcurrentchild=\count128
+\tikz@fig@count=\count129
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count130
+\pgfmatrixcurrentcolumn=\count131
+\pgf@matrix@numberofcolumns=\count132
+)
+\tikz@expandcount=\count133
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+)))
+(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v2.10 (rcs-revision 1.7)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count134
+\calc@Bcount=\count135
+\calc@Adimen=\dimen167
+\calc@Bdimen=\dimen168
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count136
+\calc@Cskip=\skip51
+)
+\c@@todonotes@numberoftodonotes=\count137
+)
 (./manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
-\scratchdimen=\dimen158
-\scratchbox=\box38
-\nofMPsegments=\count125
-\nofMParguments=\count126
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count127
-\MPscratchDim=\dimen159
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count138
+\scratchdimen=\dimen169
+\scratchbox=\box40
+\nofMPsegments=\count139
+\nofMParguments=\count140
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count141
+\MPscratchDim=\dimen170
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
+\everyMPtoPDFconversion=\toks30
 ) ABD: EveryShipout initializing macros
 (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -575,41 +657,46 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count130
-\AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring ON on input line 61.
+\c@lstlisting=\count144
+\AtBeginShipoutBox=\box41
+Package hyperref Info: Link coloring ON on input line 65.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count131
+\c@section@level=\count145
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
 
 (./manuscript.out) (./manuscript.out)
 \@outlinefile=\write4
 \openout4 = `manuscript.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 65.
+(Font)              <12> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 65.
+(Font)              <8> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 65.
+(Font)              <6> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 65.
+(Font)              <5> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 72.
+(Font)              <9> on input line 77.
+
+
+Package natbib Warning: Citation `Durand:2011jd' on page 1 undefined on input l
+ine 88.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 89.
- [1
+(Font)              <7> on input line 95.
+[1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (0.39398pt too wide) in paragraph at lines 97--100
+Overfull \hbox (0.39398pt too wide) in paragraph at lines 124--128
 []\OT1/cmr/m/n/10 ANGSD-wrapper is di-vided into scripts as-so-ci-ated with an-
 a-lyt-i-cal ap-proaches im-ple-mented in ANGSD
  []
@@ -618,33 +705,33 @@ a-lyt-i-cal ap-proaches im-ple-mented in ANGSD
 File: figures/ThetasPlot.png Graphic file (type png)
 
 <use figures/ThetasPlot.png>
-Package pdftex.def Info: figures/ThetasPlot.png used on input line 117.
+Package pdftex.def Info: figures/ThetasPlot.png used on input line 144.
 (pdftex.def)             Requested size: 369.88582pt x 162.55887pt.
 
 <figures/MainTextWorkflow.pdf, id=61, 801.3403pt x 967.9628pt>
 File: figures/MainTextWorkflow.pdf Graphic file (type pdf)
 
 <use figures/MainTextWorkflow.pdf>
-Package pdftex.def Info: figures/MainTextWorkflow.pdf used on input line 125.
+Package pdftex.def Info: figures/MainTextWorkflow.pdf used on input line 152.
 (pdftex.def)             Requested size: 452.9679pt x 547.16586pt.
 
 <figures/figure3big.pdf, id=62, 1173.69093pt x 753.09285pt>
 File: figures/figure3big.pdf Graphic file (type pdf)
 
 <use figures/figure3big.pdf>
-Package pdftex.def Info: figures/figure3big.pdf used on input line 132.
+Package pdftex.def Info: figures/figure3big.pdf used on input line 159.
 (pdftex.def)             Requested size: 452.9679pt x 290.63687pt.
 
 <figures/mt4labeled.png, id=63, 689.57625pt x 296.10625pt>
 File: figures/mt4labeled.png Graphic file (type png)
 
 <use figures/mt4labeled.png>
-Package pdftex.def Info: figures/mt4labeled.png used on input line 139.
+Package pdftex.def Info: figures/mt4labeled.png used on input line 166.
 (pdftex.def)             Requested size: 452.9679pt x 194.509pt.
- [2 <./figures/ThetasPlot.png>] [3 <./figures/MainTextWorkflow.pdf>] [4 <./figu
-res/figure3big.pdf> <./figures/mt4labeled.png>]
-(./manuscript.bbl [5]) (./supp.tex
-<figures/Wiki_Workflow.pdf, id=172, 1565.1935pt x 1895.42725pt>
+ [2] (./manuscript.bbl [3 <./figures/ThetasPlot.png>] [4 <./figures/MainTextWor
+kflow.pdf>] [5 <./figures/figure3big.pdf> <./figures/mt4labeled.png>]) (./supp.
+tex
+<figures/Wiki_Workflow.pdf, id=173, 1565.1935pt x 1895.42725pt>
 File: figures/Wiki_Workflow.pdf Graphic file (type pdf)
 
 <use figures/Wiki_Workflow.pdf>
@@ -656,45 +743,45 @@ s been already used, duplicate ignored
                    \relax 
 l.7 ...or all methods available in ANGSD-wrapper.}
                                                   )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
- [6] [7 <./figures/Wiki_Workflow.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
+[6] [7 <./figures/Wiki_Workflow.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
  (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
- 13974 strings out of 493315
- 237795 string characters out of 6137904
- 341277 words of memory out of 5000000
- 17140 multiletter control sequences out of 15000+600000
- 9632 words of font info for 35 fonts, out of 8000000 for 9000
+ 16268 strings out of 493315
+ 287281 string characters out of 6137904
+ 371509 words of memory out of 5000000
+ 19382 multiletter control sequences out of 15000+600000
+ 9940 words of font info for 36 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,6n,53p,558b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on manuscript.pdf (7 pages, 643562 bytes).
+ 49i,10n,53p,506b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on manuscript.pdf (7 pages, 653036 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
- 39 named destinations out of 1000 (max. 500000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 228 compressed objects within 3 object streams
+ 40 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

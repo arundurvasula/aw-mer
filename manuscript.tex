@@ -100,6 +100,27 @@ The scripts can be run either on a standalone computer with a UNIX terminal, or 
 An installation of the statistical software R \citep{Rcitation} is required to make use of the visualization tools incorporated in ANGSD-wrapper.  
 The visualization portion of ANGSD-wrapper also requires installation of the R packages shiny \citep{shiny}, genomeIntervals \citep{genomeIntervals}, and ape \citep{APE}.
 
+
+\begin{table}
+\begin{center}
+    \begin{tabular}{ | l | p{5cm} |}
+    \hline
+    Methods Implemented & Interactive Graphing \\ \hline
+    ABBA BABA & Yes \\ \hline
+    Admixture & Yes  \\ \hline
+    Ancestral Sequence & N/A \\ \hline
+    Genotype Likelihoods & N/A \\ \hline
+    Inbreeding Coefficients & N/A \\ \hline
+    PCA & Yes \\ \hline
+    Site Frequency Spectrum & Yes \\ \hline
+    Theta Calculation & Yes \\ \hline
+    \end{tabular}
+    \caption{Table of methods implemented in ANGSD-wrapper}
+    \label{tab:methods}
+    \end{center}
+\end{table}
+
+
 ANGSD-wrapper is divided into scripts associated with analytical approaches implemented in ANGSD and associated software. 
 ANGSD-wrapper provides a common configuration file, common.conf, which  holds variables that are likely to remain constant across analyses, including identifiers for chromosomal regions and the paths to project directories.
 In ANGSD-wrapper, each method is self-contained in a shell script which uses information from the common configuration file and a method-specific configuration file. 
@@ -109,19 +130,19 @@ Each analysis is run using a simple command:
 $ angsd-wrapper <method> <configuration_file>
 \end{lstlisting}
 
-Analyses supported by ANGSD-wrapper are shown in table \X, and a detailed flowchart of each of these workflows is shown in Figure \ref{fig:supp2}, and additional details, documentation, a tutorial, and a wiki can be found on the GitHub page: \url{https://github.com/mojaveazure/angsd-wrapper/wiki}.\jri{add a simple table of all analyses supported.}
+Analyses supported by ANGSD-wrapper are shown in table \ref{tab:methods}, and a detailed flowchart of each of these workflows is shown in Figure \ref{fig:supp2}, and additional details, documentation, a tutorial, and a wiki can be found on the GitHub page: \url{https://github.com/mojaveazure/angsd-wrapper/wiki}.
 
 The visualization software included with ANGSD-wrapper is contained within it's own directory called shinyGraphing.
 This application must be started in R and can be accessed locally from a web browser. This software provides a graphical user interface (GUI) to quickly and interactively plot results obtained from ANGSD-wrapper.  
 Each tab in the GUI contains plots for different ANGSD methods.
 
 In order to use the plotting software, the user navigates to the desired tab and uploads the appropriate file of results. 
-The Shiny server automatically parses ANGSD output files and creates the resulting plot(s) (Figure \ref{fig:theta}), which can be saved using the browser's built in image saving capabilities. \jri{is this really chromosome 10 of maize? looks like only first 10Mb. if so, should mention that in figure legend}
+The Shiny server automatically parses ANGSD output files and creates the resulting plot(s) (Figure \ref{fig:theta}), which can be saved using the browser's built in image saving capabilities.
 
 \begin{figure}
 \centering
 \includegraphics[width=130mm]{figures/ThetasPlot.png}
-\caption{A visualization of Watterson's $\theta$ estimated by ANGSD across chromosome 10 of {\it Zea mays} spp. {\it mays} using ANGSD-wrapper\label{fig:theta} }
+\caption{A visualization of Watterson's $\theta$ estimated by ANGSD across the first 10 megabases of chromosome 10 in {\it Zea mays} spp. {\it mays} using ANGSD-wrapper\label{fig:theta} }
 \end{figure}
 
 \section*{Results}
