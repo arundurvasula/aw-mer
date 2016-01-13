@@ -85,7 +85,7 @@ Many of the popular software packages used by researchers \citep[see][]{excoffie
 In particular, short read sequencing has brought new challenges, including highly variable coverage, missing data, and high per-nucleotide error rates.
 
 A number of tools have recently been published to handle high throughput sequencing data \citep{garrigan2013popbam, purcell2007plink, danecek2011variant, hutter2006genome}, but the majority of these either make limiting assumptions about the data (e.g., all sites have been sequenced, all genomes are haploid, sequencing is to sufficient depth, all individuals are outcrossing) or are specialized tools offering a narrow set of analysis options. 
-Korneliussen et al. \citep{korneliussen2014angsd} recently published the software package ANGSD, which enables users to flexibly perform a large number of common population genetic analyses, including diversity statistics, Patterson's D-statistic test of admixture \citep{Durand:2011jd}, site frequency spectrum estimation \citep{pmid22911679}, and neutrality test statistics \citep{korneliussen_calculation_2013}.
+Korneliussen et al. \citep{korneliussen2014angsd} recently published the software package ANGSD, which enables users to flexibly perform a large number of common population genetic analyses, including diversity statistics, admixture analysis including Patterson's D statistic \citep{Durand:2011jd}, site frequency spectrum estimation \citep{pmid22911679}, and neutrality test statistics \citep{korneliussen_calculation_2013}.\jri{are all these within ANGSD or are some ngsPopgen?}
 One of the most important features of ANGSD is that most analyses are performed directly on genotype likelihoods, freeing users from the requirement of calling variants or genotypes and permitting analysis of low-coverage data or sequences with large amounts of missing data. 
 
 Here we present ANGSD-wrapper, a user-friendly interface to ANGSD. 
@@ -105,21 +105,21 @@ The visualization portion of ANGSD-wrapper also requires installation of the R p
 \begin{center}
     \begin{tabular}{ | l | p{5cm} |}
     \hline
-    Methods Implemented & Interactive Graphing \\ \hline
-    ABBA BABA & Yes \\ \hline
+    \textbf{Methods Implemented} & \textbf{Interactive Graphing} \\ \hline \hline
+    Patterson's D (ABBA-BABA) & Yes \\ \hline
     Admixture & Yes  \\ \hline
-    Ancestral Sequence & N/A \\ \hline
-    Genotype Likelihoods & N/A \\ \hline
-    Inbreeding Coefficients & N/A \\ \hline
+    Ancestral Sequence & No \\ \hline
+    Genotype Likelihoods & No \\ \hline
+    Inbreeding Coefficients & No \\ \hline
     PCA & Yes \\ \hline
     Site Frequency Spectrum & Yes \\ \hline
-    Theta Calculation & Yes \\ \hline
+    Diversity Statistics  & Yes \\ \hline
     \end{tabular}
     \caption{Table of methods implemented in ANGSD-wrapper}
     \label{tab:methods}
     \end{center}
 \end{table}
-
+\jri{list diversity statistics in parentheses. what about Fst?}
 
 ANGSD-wrapper is divided into scripts associated with analytical approaches implemented in ANGSD and associated software. 
 ANGSD-wrapper provides a common configuration file, common.conf, which  holds variables that are likely to remain constant across analyses, including identifiers for chromosomal regions and the paths to project directories.
@@ -137,7 +137,7 @@ This application must be started in R and can be accessed locally from a web bro
 Each tab in the GUI contains plots for different ANGSD methods.
 
 In order to use the plotting software, the user navigates to the desired tab and uploads the appropriate file of results. 
-The Shiny server automatically parses ANGSD output files and creates the resulting plot(s) (Figure \ref{fig:theta}), which can be saved using the browser's built in image saving capabilities.
+The Shiny server automatically parses ANGSD output files and creates the resulting plot(s) (Figure \ref{fig:theta}), which can be saved using the browser's built in image saving capabilities. \jri{add genes from gff. i don't think it's Mb 1-10, pls check. if so, is x-axis wrong?}
 
 \begin{figure}
 \centering
@@ -145,8 +145,8 @@ The Shiny server automatically parses ANGSD output files and creates the resulti
 \caption{A visualization of Watterson's $\theta$ estimated by ANGSD across the first 10 megabases of chromosome 10 in {\it Zea mays} spp. {\it mays} using ANGSD-wrapper\label{fig:theta} }
 \end{figure}
 
-\section*{Results}
-
+\section*{Example data}
+\jri{show k=2 and k=3 for adxmxture in supp.}
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{figures/MainTextWorkflow.pdf}
@@ -168,9 +168,18 @@ The Shiny server automatically parses ANGSD output files and creates the resulti
 \label{fig:admixture}
 \end{figure}
 
-As a demonstration of analyses in ANGSD-wrapper, we explore patterns of diversity in maize and teosinte. We used resequenced samples from the HapMap2 project \citep{hufford2012comparative} and calculated summary statistics using a 10 megabase region on chromosome 10.
+As a demonstration of analyses in ANGSD-wrapper, we explore patterns of diversity in a single genomic region of a subset of domesticated maize and wild teosinte. We used resequenced samples from the HapMap2 project  and calculated summary statistics using a 10 megabase region on chromosome 10.\jri{cite Chia 2012 instead. include region \& mean depth, supp. table w/ sample names \& depth. include download link.}
 
-\section*{Discussion}
+We first use \X\ to estimate the site frequency spectrum (SFS) of both maize and its wild progenitor \texit{Zea mays} ssp. \textit{parviglumis}, assuming an inbreeding coefficient of $F=1$ since these are all highly inbred samples. 
+Consistent with previous results \citep{hufford2012comparative}, we show that the maize SFS is skewed towards more intermediate-frequency variants (Figure \ref{fig:figure3}A-B), likely a result of the bottleneck associated with maize domestication.\jri{cite Tim} 
+We find further evidence of the effect of domestication using \X, revealing lower levels overall levels of diversity in maize (Figure \ref{fig:figure3}C).\jri{fill in \X's with which A-W script we used. probably need to modify this to mention Tripsacum and generation of the ancestral seq. and which A-W script we used for that.}
+Using \X, we then scan our example region for windows with elevated differentiation between maize and teosinte. 
+The mean $F_{ST}$ in this region is \X, close to the genome-wide reported value of \X \citep{hufford2012comparative} .  
+The \X windows in the 1\% tail of highest $F_{ST}$ values include genes several genes identified as potential targets of selection during domestication in \citep{hufford2012comparative} 
+
+We next include two samples of the related wild teosinte \textit{Zea mays} ssp. {mexicana} to assess evidence for admixture.  
+Figure \ref{fig:admixture}) identifies previously unreported structure within the domesticated maize samples used in \citep{hufford2012comparative}   
+
 
 \section*{Conclusions}
 Our software ANGSD-wrapper provides an intuitive and easy-to-use interface to employ the powerful and flexible suite of population genetic analyses developed in ANGSD \citep{korneliussen2014angsd} and permits the exploration of genome-scale results through interactive visualization.
@@ -178,7 +187,8 @@ ANGSD-wrapper is under active development to incorporate updates to the ANGSD so
 
 \section*{Acknowledgements}
 We acknowledge funding support from the US National Science Foundation (IOS-1238014 to JRI and IOS-1339393 to PLM) and funding from the UC Davis Plant Sciences Department.  We thank members of the Ross-Ibarra and Morrell labs for discussion and software testing. We thank the authors of ANGSD and related programs for answering questions, particularly Matteo Fumagalli and Filipe Vieira. Finally, we would like to thank Felix Andrews for statistical advice, although we did not follow it. 
-
+\jri{make sure figures/tables go where Mol. Ecol. Res. suggests (at end? in text?)}
+\clearpage
 \bibliographystyle{unsrt}
 \bibliography{references}
 
