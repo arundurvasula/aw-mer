@@ -43,6 +43,11 @@ Thorfinn~S Korneliussen, Anders Albrechtsen, and Rasmus Nielsen.
 \newblock Angsd: analysis of next generation sequencing data.
 \newblock {\em BMC bioinformatics}, 15(1):356, 2014.
 
+\bibitem{Durand:2011jd}
+Eric~Y Durand, Nick Patterson, David Reich, and Montgomery Slatkin.
+\newblock {Testing for ancient admixture between closely related populations.}
+\newblock {\em Molecular Biology and Evolution}, 28(8):2239--2252, August 2011.
+
 \bibitem{pmid22911679}
 R.~Nielsen, T.~Korneliussen, A.~Albrechtsen, Y.~Li, and J.~Wang.
 \newblock {{S}{N}{P} calling, genotype calling, and sample allele frequency
@@ -106,5 +111,13 @@ Julien Gagneur, Joern Toedling, Richard Bourgon, and Nicolas Delhomme.
 E.~Paradis, J.~Claude, and K.~Strimmer.
 \newblock A{PE}: analyses of phylogenetics and evolution in {R} language.
 \newblock {\em Bioinformatics}, 20:289--290, 2004.
+
+\bibitem{hufford2012comparative}
+Matthew~B Hufford, Xun Xu, Joost Van~Heerwaarden, Tanja Pyh{\"a}j{\"a}rvi,
+  Jer-Ming Chia, Reed~A Cartwright, Robert~J Elshire, Jeffrey~C Glaubitz,
+  Kate~E Guill, Shawn~M Kaeppler, et~al.
+\newblock Comparative population genomics of maize domestication and
+  improvement.
+\newblock {\em Nature genetics}, 44(7):808--811, 2012.
 
 \end{thebibliography}
