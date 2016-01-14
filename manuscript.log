@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 JAN 2016 15:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 JAN 2016 16:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -754,13 +754,10 @@ Overfull \hbox (2.75385pt too wide) in paragraph at lines 179--184
 ize SFS is skewed to-wards more intermediate-
  []
 
-
-LaTeX Warning: Marginpar on page 3 moved.
-
 [3 <./figures/fig1.png>] [4 <./figures/MainTextWorkflow.pdf>] [5 <./figures/fig
 ure3big.pdf> <./figures/mt4labeled.png>] [6] (./manuscript.bbl [7
 
-]) (./supp.tex <figures/Wiki_Workflow.pdf, id=206, 1565.1935pt x 1895.42725pt>
+]) (./supp.tex <figures/Wiki_Workflow.pdf, id=205, 1565.1935pt x 1895.42725pt>
 File: figures/Wiki_Workflow.pdf Graphic file (type pdf)
 
 <use figures/Wiki_Workflow.pdf>
@@ -772,7 +769,7 @@ s been already used, duplicate ignored
                    \relax 
 l.9 ...or all methods available in ANGSD-wrapper.}
                                                   
-<figures/admixture.png, id=207, 679.53876pt x 822.07124pt>
+<figures/admixture.png, id=206, 679.53876pt x 822.07124pt>
 File: figures/admixture.png Graphic file (type png)
 
 <use figures/admixture.png>
@@ -807,10 +804,10 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 203.
  ) 
 Here is how much of TeX's memory you used:
- 16391 strings out of 493315
- 289932 string characters out of 6137904
- 385690 words of memory out of 5000000
- 19492 multiletter control sequences out of 15000+600000
+ 16388 strings out of 493315
+ 289865 string characters out of 6137904
+ 380839 words of memory out of 5000000
+ 19490 multiletter control sequences out of 15000+600000
  9940 words of font info for 36 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,11n,76p,548b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -830,10 +827,10 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
 3/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2013/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on manuscript.pdf (10 pages, 508554 bytes).
+Output written on manuscript.pdf (10 pages, 508284 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
- 266 compressed objects within 3 object streams
- 52 named destinations out of 1000 (max. 500000)
+ 337 PDF objects out of 1000 (max. 8388607)
+ 265 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
