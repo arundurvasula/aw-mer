@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  14 JAN 2016 17:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  14 JAN 2016 17:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -737,32 +737,32 @@ Overfull \hbox (0.39398pt too wide) in paragraph at lines 135--139
 a-lyt-i-cal ap-proaches im-ple-mented in ANGSD
  []
 
-<figures/fig1.png, id=60, 1259.70625pt x 538.01pt>
-File: figures/fig1.png Graphic file (type png)
- <use figures/fig1.png>
-Package pdftex.def Info: figures/fig1.png used on input line 155.
-(pdftex.def)             Requested size: 369.88582pt x 157.97273pt.
+<figures/fig1.pdf, id=60, 575.11684pt x 242.91995pt>
+File: figures/fig1.pdf Graphic file (type pdf)
+ <use figures/fig1.pdf>
+Package pdftex.def Info: figures/fig1.pdf used on input line 155.
+(pdftex.def)             Requested size: 369.88582pt x 156.23921pt.
 
-<figures/MainTextWorkflow.pdf, id=62, 801.3403pt x 967.9628pt>
+<figures/MainTextWorkflow.pdf, id=61, 801.3403pt x 967.9628pt>
 File: figures/MainTextWorkflow.pdf Graphic file (type pdf)
 
 <use figures/MainTextWorkflow.pdf>
 Package pdftex.def Info: figures/MainTextWorkflow.pdf used on input line 162.
 (pdftex.def)             Requested size: 452.9679pt x 547.16586pt.
  [2]
-<figures/figure3big.pdf, id=85, 1173.69093pt x 753.09285pt>
+<figures/figure3big.pdf, id=84, 1173.69093pt x 753.09285pt>
 File: figures/figure3big.pdf Graphic file (type pdf)
 
 <use figures/figure3big.pdf>
 Package pdftex.def Info: figures/figure3big.pdf used on input line 169.
 (pdftex.def)             Requested size: 452.9679pt x 290.63687pt.
 
-<figures/mt4labeled.png, id=86, 681.54625pt x 300.12125pt>
-File: figures/mt4labeled.png Graphic file (type png)
+<figures/mt4labeled.pdf, id=85, 685.43909pt x 296.78307pt>
+File: figures/mt4labeled.pdf Graphic file (type pdf)
 
-<use figures/mt4labeled.png>
-Package pdftex.def Info: figures/mt4labeled.png used on input line 176.
-(pdftex.def)             Requested size: 452.9679pt x 199.46822pt.
+<use figures/mt4labeled.pdf>
+Package pdftex.def Info: figures/mt4labeled.pdf used on input line 176.
+(pdftex.def)             Requested size: 452.9679pt x 196.13554pt.
 
 ./manuscript.tex:177: Undefined control sequence.
 <argument> ...t Zea mays} spp. {mexicana} (\texit 
@@ -966,11 +966,11 @@ Overfull \hbox (5227.532pt too wide) in paragraph at lines 185--196
 \OT1/cmr/m/n/10 method, which in-cludes an $[]$ 
  []
 
-[3 <./figures/fig1.png>] [4 <./figures/MainTextWorkflow.pdf>] [5 <./figures/fig
-ure3big.pdf> <./figures/mt4labeled.png>] (./manuscript.bbl [6
+[3 <./figures/fig1.pdf>] [4 <./figures/MainTextWorkflow.pdf>] [5 <./figures/fig
+ure3big.pdf> <./figures/mt4labeled.pdf>] (./manuscript.bbl [6
 
 ]) (./supp.tex
-<figures/Wiki_Workflow.pdf, id=200, 1565.1935pt x 1895.42725pt>
+<figures/Wiki_Workflow.pdf, id=238, 1565.1935pt x 1895.42725pt>
 File: figures/Wiki_Workflow.pdf Graphic file (type pdf)
 
 <use figures/Wiki_Workflow.pdf>
@@ -982,7 +982,7 @@ s been already used, duplicate ignored
                    \relax 
 l.9 ...or all methods available in ANGSD-wrapper.}
                                                   
-<figures/admixture.pdf, id=201, 722.7pt x 836.4539pt>
+<figures/admixture.pdf, id=239, 722.7pt x 836.4539pt>
 File: figures/admixture.pdf Graphic file (type pdf)
 
 <use figures/admixture.pdf>
@@ -1014,16 +1014,12 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
  ) 
 Here is how much of TeX's memory you used:
- 16379 strings out of 493315
- 289627 string characters out of 6137904
- 374214 words of memory out of 5000000
+ 16378 strings out of 493315
+ 289623 string characters out of 6137904
+ 374160 words of memory out of 5000000
  19483 multiletter control sequences out of 15000+600000
  9940 words of font info for 36 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1044,10 +1040,10 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
 3/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2013/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on manuscript.pdf (9 pages, 554730 bytes).
+Output written on manuscript.pdf (9 pages, 600351 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 290 compressed objects within 3 object streams
+ 414 PDF objects out of 1000 (max. 8388607)
+ 318 compressed objects within 4 object streams
  49 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
