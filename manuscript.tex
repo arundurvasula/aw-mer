@@ -41,11 +41,11 @@
 \definecolor{flame}{rgb}{0.89, 0.35, 0.13}
 %\setlength{\marginparwidth}{1.5cm}
 \newcommand{\jri}[1]{\todo[size=\scriptsize, color=flame]{#1}}
-            
+\newcommand{\fst}{$\textrm{F_{\textrm{\scriptsize ST}}}$}          
 \newcommand{\X}{\textcolor{red}{\bf X}}
 
 
-\title{More than one Author with different Affiliations}
+%\title{More than one Author with different Affiliations}
 \author[1,$\dag$]{Arun Durvasula}
 \author[2,$\dag$]{Paul J. Hoffman}
 \author[1]{Tyler V. Kent}
@@ -103,25 +103,34 @@ The visualization portion of ANGSD-wrapper also requires installation of the R p
 
 \begin{table}
 \begin{center}
-    \begin{tabular}{ | p{5cm} | p{5cm} |}
+    \begin{tabular}{ | p{3.5cm} | p{5cm} | p{2.5cm}  |}
     \hline
-    \textbf{Methods Implemented} & \textbf{Interactive Graphing} \\ \hline \hline
-    Patterson's D (ABBA-BABA) & Yes \\ \hline
-    Admixture & Yes  \\ \hline
-    Ancestral Sequence & No \\ \hline
-    Genotype Likelihoods & No \\ \hline
-    Inbreeding Coefficients & No \\ \hline
-    PCA & Yes \\ \hline
-    Site Frequency Spectrum & Yes \\ \hline
-    Diversity Statistics ($\theta_w$, $\theta_\pi$, Fu and Li's $\theta$, Fay's $\theta$)   & Yes \\ \hline
-    Neutrality Test Statistics (Tajima's D, Fu and Li's D, Fu and Li's F,  Fay and Wu's H, Zeng's E ) & Yes \\ \hline
-    Fst & Yes \\ \hline
+    \textbf{Method} & \textbf{Calculations} & \textbf{Interactive Graphing} \\ \hline \hline
+    SFS     &    Site frequency spectrum  & Yes  \\ \hline     2DSFS   &    Joint site frequency spectrum, \fst & Yes  \\ \hline 
+    Abbababa  &  Patterson's D statistic & Yes  \\ \hline 
+    Ancestral &  Extract ancestral sequence from BAM file  & No \\ \hline 
+    Genotypes &  Genotype likelihood estimations & No  \\ \hline 
+    PCA     &    Principal component analysis & Yes  \\ \hline 
+    Thetas   &   Diversity statistics ($\theta_w$, $\theta_\pi$, Fu and Li's $\theta$, Fay's $\theta$) and neutrality tests (Tajima's D, Fu and Li's D, Fu and Li's F,  Fay and Wu's H, Zeng's E ) & Yes  \\ \hline 
+    Inbreeding & Calculate per-individual inbreeding coefficients with ngsF & No  \\ \hline 
+    Admixture  & Perform admixture analysis & Yes  \\ \hline 
+
+
+ %   Patterson's D (ABBA-BABA) & Yes \\ \hline
+%    Admixture & Yes  \\ \hline
+%    Ancestral Sequence & No \\ \hline
+%    Genotype Likelihoods & No \\ \hline
+%    Inbreeding Coefficients & No \\ \hline
+%    PCA & Yes \\ \hline
+%    Site Frequency Spectrum & Yes \\ \hline
+%    Diversity Statistics ($\theta_w$, $\theta_\pi$, Fu and Li's $\theta$, Fay's $\theta$)   & Yes \\ \hline
+%    Neutrality Test Statistics (Tajima's D, Fu and Li's D, Fu and Li's F,  Fay and Wu's H, Zeng's E ) & Yes \\ \hline
+%    $\textrm{F_{\textrm{\scriptsize ST}}}$ & Yes \\ \hline
     \end{tabular}
     \caption{Table of methods implemented in ANGSD-wrapper}
     \label{tab:methods}
     \end{center}
 \end{table}
-%\jri{in table: list diversity statistics in parentheses. what about Fst?} done. and added Neutrality test stats
 
 ANGSD-wrapper is divided into scripts associated with analytical approaches implemented in ANGSD and associated software. 
 ANGSD-wrapper provides a common configuration file, common.conf, which  holds variables that are likely to remain constant across analyses, including identifiers for chromosomal regions and the paths to project directories.
@@ -139,7 +148,7 @@ This application must be started in R and can be accessed locally from a web bro
 Each tab in the GUI contains plots for different ANGSD methods.
 
 In order to use the plotting software, the user navigates to the desired tab and uploads the appropriate file of results. 
-The Shiny server automatically parses ANGSD output files and creates the resulting plot(s) (Figure \ref{fig:theta}), which can be saved using the browser's built in image saving capabilities. % \jri{add genes from gff. i don't think it's Mb 1-10, pls check. if so, is x-axis wrong?} done
+The Shiny server automatically parses ANGSD output files and creates the resulting plot(s) (Figure \ref{fig:theta}), which can be saved using the browser's built in image saving capabilities.
 
 \begin{figure}
 \centering
@@ -148,7 +157,6 @@ The Shiny server automatically parses ANGSD output files and creates the resulti
 \end{figure}
 
 \section*{Example data}
-% \jri{show k=2 and k=3 for adxmxture in supp.} done
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{figures/MainTextWorkflow.pdf}
@@ -170,17 +178,15 @@ The Shiny server automatically parses ANGSD output files and creates the resulti
 \label{fig:admixture}
 \end{figure}
 
-% \jri{change Mex to mex and make italics in figure axis} done
-
 As a demonstration of analyses in ANGSD-wrapper, we explore patterns of diversity in a single genomic region of a subset of domesticated maize and wild teosinte. We used resequenced samples from the HapMap2 project  and calculated summary statistics using a 10 megabase region on chromosome 10 \citep{chia2012maize} . The data is available at \url{https://figshare.com/articles/Example_Data_tar_bz2/2063442}. 
 
 We first use the SFS method to estimate the site frequency spectrum (SFS) of both maize and its wild progenitor \textit{Zea mays} ssp. \textit{parviglumis}, assuming an inbreeding coefficient of $F=1$ since these are all highly inbred samples. %\jri{do we worry that fig. 3 not graphs directly from A-W?} % noted this in the figure legend, SFSes are basically from AW, just colors changed. In the future should we add color picker for SFS?
 
 Consistent with previous results \citep{hufford2012comparative}, we show that the maize SFS is skewed towards more intermediate-frequency variants (Figure \ref{fig:figure3}A-B), likely a result of the bottleneck associated with maize domestication \citep{Beissinger031666}.
 We find further evidence of the effect of domestication using the Thetas method, revealing lower levels overall levels of diversity in maize (Figure \ref{fig:figure3}C). These results use Tripsacum as an ancestral sequence, which was generated using the Ancestral Sequence method in ANGSD-wrapper. %\jri{fill in \X's with which A-W script we used. probably need to modify this to mention Tripsacum and generation of the ancestral seq. and which A-W script we used for that.} done
-Using the 2DSFS method, which includes an $F_{ST}$ calculation, we then scan our example region for windows with elevated differentiation between maize and teosinte. 
-The mean $F_{ST}$ in this region is 0.013, which is an order of magnitude lower than the genome-wide reported value of 0.11 \citep{hufford2012comparative}.   
-The \X windows in the 1\% tail of highest $F_{ST}$ values include genes several genes identified as potential targets of selection during domestication in \citep{hufford2012comparative} \jri{see supp tables in Huff. make supp. table of genes in top 1\%. sorry to add, but this is cool \& demonstrates more stuff A-W can do. don't need a graph}
+Using the 2DSFS method, which includes an \fst calculation, we then scan our example region for windows with elevated differentiation between maize and teosinte. 
+The mean \fst in this region is 0.013, which is an order of magnitude lower than the genome-wide reported value of 0.11 \citep{hufford2012comparative}.   
+The \X windows in the 1\% tail of highest \fst values include genes several genes identified as potential targets of selection during domestication in \citep{hufford2012comparative} \jri{see supp tables in Huff. make supp. table of genes in top 1\%. sorry to add, but this is cool \& demonstrates more stuff A-W can do. don't need a graph}
 
 Finally, we include two samples of the related wild teosinte \textit{Zea mays} ssp. {mexicana} to assess evidence for admixture.  
 Figure \ref{fig:admixture} identifies structure within the domesticated maize separating three high-latitude temperate landraces from the other tropical accessions. 
