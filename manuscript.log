@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  18 JAN 2016 21:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  19 JAN 2016 13:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -772,18 +772,22 @@ s been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.16 ...=2 (top), K=3 (middle), and K=4 (bottom).}
+                                                  
+Overfull \hbox (9.82344pt too wide) in paragraph at lines 22--49
+ [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 ...region 15000000-25000000 on chromosome 10}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{table.1}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.48 ...region 15000000-25000000 on chromosome 10}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{table.1}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.48 ...region 15000000-25000000 on chromosome 10}
+l.49 ...region 15000000-25000000 on chromosome 10}
                                                   )
 
 Package natbib Warning: There were undefined citations.
@@ -797,12 +801,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 212.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 212.
  ) 
 Here is how much of TeX's memory you used:
  16371 strings out of 493315
  289451 string characters out of 6137904
- 377168 words of memory out of 5000000
+ 379169 words of memory out of 5000000
  19479 multiletter control sequences out of 15000+600000
  9940 words of font info for 36 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -823,7 +831,7 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
 3/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2013/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on manuscript.pdf (9 pages, 568587 bytes).
+Output written on manuscript.pdf (9 pages, 569134 bytes).
 PDF statistics:
  388 PDF objects out of 1000 (max. 8388607)
  299 compressed objects within 3 object streams
