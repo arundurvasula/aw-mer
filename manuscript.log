@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  20 JAN 2016 11:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  20 JAN 2016 11:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -721,12 +721,12 @@ Package pdftex.def Info: figures/figure3big.pdf used on input line 173.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 179.
  [2] [3 <./figures/fig1.pdf> <./figures/figure3big.pdf>] <figures/mt4labeled.pd
-f, id=151, 685.43909pt x 296.78307pt>
+f, id=151, 685.88919pt x 298.92397pt>
 File: figures/mt4labeled.pdf Graphic file (type pdf)
 
 <use figures/mt4labeled.pdf>
 Package pdftex.def Info: figures/mt4labeled.pdf used on input line 190.
-(pdftex.def)             Requested size: 362.37569pt x 156.90935pt.
+(pdftex.def)             Requested size: 362.37569pt x 157.93176pt.
 
 ./manuscript.tex:191: Undefined control sequence.
 <argument> ...t Zea mays} spp. {mexicana} (\texit 
@@ -749,7 +749,7 @@ l.191 ... same order as Table \ref{tab:samples}. }
 [4 <./figures/mt4labeled.pdf>] [5] (./manuscript.bbl [6
 
 ]) (./supp.tex
-<figures/Wiki_Workflow.pdf, id=215, 1565.1935pt x 1895.42725pt>
+<figures/Wiki_Workflow.pdf, id=214, 1565.1935pt x 1895.42725pt>
 File: figures/Wiki_Workflow.pdf Graphic file (type pdf)
 
 <use figures/Wiki_Workflow.pdf>
@@ -761,12 +761,12 @@ s been already used, duplicate ignored
                    \relax 
 l.9 ...or all methods available in ANGSD-wrapper.}
                                                   
-<figures/admixture.pdf, id=216, 722.7pt x 836.4539pt>
+<figures/admixture.pdf, id=215, 722.7pt x 817.59242pt>
 File: figures/admixture.pdf Graphic file (type pdf)
 
 <use figures/admixture.pdf>
 Package pdftex.def Info: figures/admixture.pdf used on input line 15.
-(pdftex.def)             Requested size: 452.9679pt x 524.26294pt.
+(pdftex.def)             Requested size: 452.9679pt x 512.44116pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <to be read again> 
@@ -804,10 +804,10 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
  ) 
 Here is how much of TeX's memory you used:
- 16378 strings out of 493315
- 289603 string characters out of 6137904
- 380195 words of memory out of 5000000
- 19485 multiletter control sequences out of 15000+600000
+ 16375 strings out of 493315
+ 289537 string characters out of 6137904
+ 379276 words of memory out of 5000000
+ 19483 multiletter control sequences out of 15000+600000
  9940 words of font info for 36 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,13n,76p,601b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -827,10 +827,10 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
 3/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2013/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on manuscript.pdf (9 pages, 570038 bytes).
+Output written on manuscript.pdf (9 pages, 568731 bytes).
 PDF statistics:
- 389 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
+ 388 PDF objects out of 1000 (max. 8388607)
+ 299 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
