@@ -60,6 +60,12 @@ Thorfinn Korneliussen, Ida Moltke, Anders Albrechtsen, and Rasmus Nielsen.
   low depth next-generation sequencing data.
 \newblock {\em {BMC} Bioinformatics}, 14(1):289, 2013.
 
+\bibitem{ngsPopGen}
+Matteo Fumagali.
+\newblock ngspopgen.
+\newblock \url{https://github.com/mfumagalli/ngsPopGen}.
+\newblock Accessed: 2016-01-18.
+
 \bibitem{vieira2013estimating}
 Filipe~G Vieira, Matteo Fumagalli, Anders Albrechtsen, and Rasmus Nielsen.
 \newblock Estimating inbreeding coefficients from ngs data: Impact on genotype
@@ -119,13 +125,13 @@ Jer-Ming Chia, Chi Song, Peter~J Bradbury, Denise Costich, Natalia de~Leon,
 \newblock Maize hapmap2 identifies extant variation from a genome in flux.
 \newblock {\em Nature genetics}, 44(7):803--807, 2012.
 
-\bibitem{hufford2012comparative}
-Matthew~B Hufford, Xun Xu, Joost Van~Heerwaarden, Tanja Pyh{\"a}j{\"a}rvi,
-  Jer-Ming Chia, Reed~A Cartwright, Robert~J Elshire, Jeffrey~C Glaubitz,
-  Kate~E Guill, Shawn~M Kaeppler, et~al.
-\newblock Comparative population genomics of maize domestication and
-  improvement.
-\newblock {\em Nature genetics}, 44(7):808--811, 2012.
+\bibitem{eyre1998investigation}
+Adam Eyre-Walker, Rebecca~L Gaut, Holly Hilton, Dawn~L Feldman, and Brandon~S
+  Gaut.
+\newblock Investigation of the bottleneck leading to the domestication of
+  maize.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  95(8):4441--4446, 1998.
 
 \bibitem{Beissinger031666}
 Timothy~Mathes Beissinger, Li~Wang, Kate Crosby, Arun Durvasula, Matthew~B
@@ -133,6 +139,14 @@ Timothy~Mathes Beissinger, Li~Wang, Kate Crosby, Arun Durvasula, Matthew~B
 \newblock Recent demography drives changes in linked selection across the maize
   genome.
 \newblock {\em bioRxiv}, 2015.
+
+\bibitem{hufford2012comparative}
+Matthew~B Hufford, Xun Xu, Joost Van~Heerwaarden, Tanja Pyh{\"a}j{\"a}rvi,
+  Jer-Ming Chia, Reed~A Cartwright, Robert~J Elshire, Jeffrey~C Glaubitz,
+  Kate~E Guill, Shawn~M Kaeppler, et~al.
+\newblock Comparative population genomics of maize domestication and
+  improvement.
+\newblock {\em Nature genetics}, 44(7):808--811, 2012.
 
 \bibitem{hufford2013genomic}
 Matthew~B Hufford, Pesach Lubinksy, Tanja Pyh{\"a}j{\"a}rvi, Michael~T
