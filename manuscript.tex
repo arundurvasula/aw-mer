@@ -152,16 +152,16 @@ The Shiny server automatically parses ANGSD output files and creates the resulti
 \begin{figure}
 \centering
 \includegraphics[width=0.8\linewidth]{figures/fig1.pdf}
-\caption{Visualization of Watterson's $\theta$ estimated by ANGSD across a 1.5Mb region of chromosome 10 in {\it Zea mays} ssp. {\it mays} using ANGSD-wrapper. Blue boxes indicate genic regions provided by a GFF annotation. \label{fig:theta} }
+\caption{Visualization of Watterson's $\theta$ estimated by ANGSD across a 1.5Mb region of chromosome 10 in {\it Zea mays} ssp. {\it mays} using ANGSD-wrapper. Darker colors indicate a higher density of points. Blue boxes indicate gene annotations provided by a GFF file. \label{fig:theta} }
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[width=0.8\linewidth]{figures/figure3big.pdf}
-\caption{Summary statistics for {\it Zea mays}. Site frequency spectra for A. maize and B. teosinte. C. distribution of pairwise differences for maize (blue) and teosinte (orange). Pairwise diversity results are visualized separately from the interactive graphics and colors were added to A and B using a custom script.}
+\caption{Summary statistics for {\it Zea mays}. Derived site frequency spectra for A. maize and B. teosinte. C. distribution of pairwise differences for maize (blue) and teosinte (orange). Pairwise diversity results are visualized separately from the interactive graphics and colors were added to A and B using a custom script.}
 \label{fig:figure3}
 \end{figure}
-
+\jri{figure says "spectrum" should be plural}
 As a demonstration of analyses in ANGSD-wrapper, we explore patterns of diversity in a single genomic region of domesticated maize and wild teosinte. 
 We used a subset of the resequenced samples from the Maize HapMap2 project (Table \ref{tab:samples}) and calculated summary statistics using a 10Mb region on chromosome 10 \citep{chia2012maize}. 
 The data are available at \url{https://figshare.com/articles/Example_Data_tar_bz2/2063442}. 
@@ -170,18 +170,18 @@ In the following we refer to methods listed in Table \ref{tab:methods} when desc
 We first use the ``SFS'' method to estimate the site frequency spectrum (SFS) of both maize and its wild progenitor \textit{Zea mays} ssp. \textit{parviglumis}, assuming an inbreeding coefficient of $F=1$ for these highly inbred samples. 
 The SFS and diversity statistics were calculated using ancestral states inferred in the ``Ancestral Sequence'' method from a single resequenced genome of \textit{Tripsacum dactyloides}.  
 We show that the maize SFS is skewed towards more intermediate-frequency variants (Figure \ref{fig:figure3}A-B, Tajima's D of 0.2 and 0.0085 in maize and teosinte, respectively), likely a result of the bottleneck associated with maize domestication \citep{eyre1998investigation, Beissinger031666}.
-Using the ``Thetas'' method we find further evidence of the domestication bottleneck, with mean levels of nucleotide diversity in this region in maize $\approx 25\%$ lower than in teosinte (0.0061 and 0.0082, respectively; Figure \ref{fig:figure3}C). 
+Using the ``Thetas'' method we find further evidence of the domestication bottleneck, with mean levels of pairwise nucleotide diversity in this region in maize $\approx 25\%$ lower than in teosinte (0.0061 and 0.0082, respectively; Figure \ref{fig:figure3}C). 
 Using the ``2DSFS method,'' which includes an \fst calculation, we find a mean \fst in this region of 0.116, nearly identical to the  genome-wide value of 0.11 reported in \cite{hufford2012comparative}.   
 There are no genes in this region that have  been identified as potential domestication candidates, consistent with the lack of extended regions of high \fst in our analysis (Figure \ref{fig:suppfst}).
 
 \begin{figure}
 \centering
 \includegraphics[width=0.8\linewidth]{figures/mt4labeled.pdf}
-\caption{Admixture analysis for {\it Zea mays} ssp. {\it mays}, {\it Zea mays} ssp. {\it parviglumis}, and {\it Zea mays} ssp. {\it mexicana} (\textit{mex}) with K=4 source populations. 
+\caption{Admixture analysis for {\it Zea mays} ssp. {\it mays}, {\it Zea mays} ssp. {\it parviglumis}, and {\it Zea mays} ssp. {\it mexicana} (\textit{mex}) with colors representing the K=4 source populations. 
 Individuals are shown in the same order as Table \ref{tab:samples}. }
 \label{fig:admixture}
 \end{figure}
-
+\jri{what are vertical lines in pi density plot? need to be consistent about saying "nucleotide diversity" vs "pairwise diversity" vs "pairwise differences" etc.  I vote for "pairwise nucleotide diversity"}
 Finally, we include two samples of the related wild teosinte \textit{Zea mays} ssp. \textit{mexicana} to assess evidence for admixture.  
 Using the ``Admixture'' method, which implements an estimate of admixture proportion from genotype likelihoods \citep{pmid24026093}, we identify structure within domesticated maize separating three high-latitude temperate landraces from the other tropical accessions (Figure \ref{fig:admixture}). 
 This analysis is a supervised method that assigns proportions of the each individual's genome to a putative source population, represented by the colors. 
@@ -193,7 +193,7 @@ A single ssp. \textit{parviglumis} accession from the Northern extent of the ran
 \section*{Conclusions}
 ANGSD-wrapper provides an easy-to-use interface that simplifies many population genetic analyses implemented in ANGSD \citep{korneliussen2014angsd} and permits the exploration of genome-scale results through interactive visualization.
 ANGSD-wrapper is under active development to incorporate updates to the ANGSD software package.  
-
+\jri{why is table in middle of refs? check refs for completeness. e.g. skotte is missing page numbers}
 \section*{Acknowledgements}
 We acknowledge funding support from the US National Science Foundation (IOS-1238014 to JRI and IOS-1339393 to PLM), from a University of Minnesota Doctoral Dissertation Fellowship supporting TJYK, and from the University of California Davis Plant Sciences Department. We thank members of the Ross-Ibarra and Morrell Labs for discussion and software testing. We thank the authors of ANGSD and related programs for answering questions, particularly Matteo Fumagalli and Filipe Vieira. Finally, we would like to thank Felix Andrews for statistical advice, although we did not follow it. 
 \clearpage
