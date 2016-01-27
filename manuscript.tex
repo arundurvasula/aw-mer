@@ -86,13 +86,13 @@ Many popular software packages used by researchers for analysis of comparative r
 Despite the decreasing cost of sequencing, researchers must allocate finite resources and balance the depth of sequencing and the breadth of a sample. 
 This poses a challenge for population genetics analysis, which generally requires accurate polymorphism calls in a broad sample. 
 This is especially true of studies that span multiple subpopulations, as this balance must be met for each partition \citep{pluzhnikov1996optimal, felsenstein2005using}. 
-While the experimental design challenges with moleclar population genetic studies have existed for at least a decade, high throughput sequencing brings the technical challenges of highly variable coverage, missing data, and high per-nucleotide error rates.
+While the experimental design challenges with molecular population genetic studies have existed for at least a decade, high throughput sequencing brings the technical challenges of highly variable coverage, missing data, and high per-nucleotide error rates.
 
 A number of tools have recently been published to estimate population genetic descriptive statistics using high throughput sequencing data \citep{garrigan2013popbam, purcell2007plink, danecek2011variant, hutter2006genome}. 
 However, few of these tools offer the flexibility to handle data with the characteristics of high throughput sequence data. 
 Korneliussen et al. \citep{korneliussen2014angsd} recently published the software package, ANGSD, which enables users to flexibly perform a large number of common population genetic analyses, including estimation of diversity statistics, admixture analysis including Patterson's D statistic \citep{Durand:2011jd}, site frequency spectrum estimation \citep{pmid22911679}, and calculation of neutrality test statistics \citep{korneliussen_calculation_2013}. 
 ANGSD works directly with the alignment formats produced from standard high throughput sequence analysis pipelines, which removes the need for the user to transform the data into a niche format. 
-One of the most important features of ANGSD is that analyses are integreated over per-site genotype likelihoods, rather than only on pre-determined variable sites. 
+One of the most important features of ANGSD is that analyses are integrated over per-site genotype likelihoods, rather than only on pre-determined variable sites. 
 This permits ANGSD to calculate common population genetic descriptive statistics on low-coverage sequencing data, and handle missingness due to variation in coverage. 
 
 Here we present ANGSD-wrapper, a user-friendly interface to stable versions of ANGSD. 
@@ -123,18 +123,6 @@ The visualization portion of ANGSD-wrapper also requires installation of the R p
     Thetas   &   Diversity statistics ($\theta_w$, $\theta_\pi$, Fu and Li's $\theta$, Fay's $\theta$) and neutrality tests (Tajima's D, Fu and Li's D, Fu and Li's F,  Fay and Wu's H, Zeng's E ) & Yes  \\ \hline 
     Inbreeding & Calculate per-individual inbreeding coefficients with ngsF & No  \\ \hline 
     Admixture  & Perform admixture analysis & Yes  \\ \hline 
-
-
- %   Patterson's D (ABBA-BABA) & Yes \\ \hline
-%    Admixture & Yes  \\ \hline
-%    Ancestral Sequence & No \\ \hline
-%    Genotype Likelihoods & No \\ \hline
-%    Inbreeding Coefficients & No \\ \hline
-%    PCA & Yes \\ \hline
-%    Site Frequency Spectrum & Yes \\ \hline
-%    Diversity Statistics ($\theta_w$, $\theta_\pi$, Fu and Li's $\theta$, Fay's $\theta$)   & Yes \\ \hline
-%    Neutrality Test Statistics (Tajima's D, Fu and Li's D, Fu and Li's F,  Fay and Wu's H, Zeng's E ) & Yes \\ \hline
-%    $\textrm{F_{\textrm{\scriptsize ST}}}$ & Yes \\ \hline
     \end{tabular}
     \caption{Table of methods implemented in ANGSD-wrapper}
     \label{tab:methods}
@@ -142,7 +130,7 @@ The visualization portion of ANGSD-wrapper also requires installation of the R p
 \end{table}
 
 ANGSD-wrapper is divided into scripts associated with analytical approaches implemented in ANGSD and associated software. 
-ANGSD-wrapper provides a common configuration file, ``common.conf,'' which  holds variables that are likely to remain constant across analyses, including identifiers for chromosomal regions and the paths to project directories.
+ANGSD-wrapper provides a common configuration file, ``common.conf,'' which holds variables that are likely to remain constant across analyses, including identifiers for chromosomal regions and the paths to project directories.
 In ANGSD-wrapper, each method is self-contained in a shell script which uses information from the common configuration file and a method-specific configuration file. 
 Each analysis is run using a simple command:
 
@@ -167,14 +155,6 @@ The Shiny server automatically parses ANGSD output files and creates the resulti
 \caption{Visualization of Watterson's $\theta$ estimated by ANGSD across a 1.5Mb region of chromosome 10 in {\it Zea mays} ssp. {\it mays} using ANGSD-wrapper. Blue boxes indicate genic regions provided by a GFF annotation. \label{fig:theta} }
 \end{figure}
 
-%\section*{Example data}
-%\begin{figure}
-%\centering
-%\includegraphics[width=\linewidth]{figures/MainTextWorkflow.pdf}
-%\caption{Example analysis workflow diagram.}
-%\label{fig:workflow}
-%\end{figure}
-
 \begin{figure}
 \centering
 \includegraphics[width=0.8\linewidth]{figures/figure3big.pdf}
@@ -189,8 +169,8 @@ In the following we refer to methods listed in Table \ref{tab:methods} when desc
 
 We first use the ``SFS'' method to estimate the site frequency spectrum (SFS) of both maize and its wild progenitor \textit{Zea mays} ssp. \textit{parviglumis}, assuming an inbreeding coefficient of $F=1$ for these highly inbred samples. 
 The SFS and diversity statistics were calculated using ancestral states inferred in the ``Ancestral Sequence'' method from a single resequenced genome of \textit{Tripsacum dactyloides}.  
-We show that the maize SFS is skewed towards more intermediate-frequency variants (Figure \ref{fig:figure3}A-B, Tajima's D of 0.2 and 0.0085 in maize and teosinte, respectively), likely a result of the bottleneck associated with maize domestication \citep{eyre1998investigation} \citep{Beissinger031666}.
-Using the ``Thetas'' method we find further evidence of the domestication bottleneck, with  mean levels of nucleotide diversity in this region in maize $\approx 25\%$ lower than in teosinte (0.0061 and 0.0082, respectively; Figure \ref{fig:figure3}C). 
+We show that the maize SFS is skewed towards more intermediate-frequency variants (Figure \ref{fig:figure3}A-B, Tajima's D of 0.2 and 0.0085 in maize and teosinte, respectively), likely a result of the bottleneck associated with maize domestication \citep{eyre1998investigation, Beissinger031666}.
+Using the ``Thetas'' method we find further evidence of the domestication bottleneck, with mean levels of nucleotide diversity in this region in maize $\approx 25\%$ lower than in teosinte (0.0061 and 0.0082, respectively; Figure \ref{fig:figure3}C). 
 Using the ``2DSFS method,'' which includes an \fst calculation, we find a mean \fst in this region of 0.116, nearly identical to the  genome-wide value of 0.11 reported in \cite{hufford2012comparative}.   
 There are no genes in this region that have  been identified as potential domestication candidates, consistent with the lack of extended regions of high \fst in our analysis (Figure \ref{fig:suppfst}).
 
@@ -203,10 +183,11 @@ Individuals are shown in the same order as Table \ref{tab:samples}. }
 \end{figure}
 
 Finally, we include two samples of the related wild teosinte \textit{Zea mays} ssp. \textit{mexicana} to assess evidence for admixture.  
-Using the ``Admixture'' method, which implements an estimate of admixture proportion from genotype likelihoods \citep{pmid24026093}, we identify  structure within domesticated maize separating three high-latitude temperate landraces from the other tropical accessions (Figure \ref{fig:admixture}).
-We find no evidence of admixture between these lowland maize samples and  ssp. \textit{mexicana}, consistent with an independent analysis from SNP genotyping \citep{hufford2013genomic}.
-\textit{Zea mays} ssp. \textit{mexicana} clusters into its own group, along with a single accession of ssp. \textit{parviglumis} collected from a region in which many teosinte populations appear to be the result of admixture between the two subspecies \citep{fang2012megabase}.  
-A single  ssp. \textit{parviglumis} accession from the Northern extent of the range does not appear to be well-classified with these data, likely due to our relatively limited geographic and genomic sampling.
+Using the ``Admixture'' method, which implements an estimate of admixture proportion from genotype likelihoods \citep{pmid24026093}, we identify structure within domesticated maize separating three high-latitude temperate landraces from the other tropical accessions (Figure \ref{fig:admixture}). 
+This analysis is a supervised method that assigns proportions of the each individual's genome to a putative source population, represented by the colors. 
+In maize, we see that most individuals come from one source population (dark grey or dark blue), which is evidence for no admixture between these lowland maize samples and  ssp. \textit{mexicana}, and is consistent with an independent analysis from SNP genotyping \citep{hufford2013genomic}.
+\textit{Zea mays} ssp. \textit{mexicana} clusters into its own group (orange), along with a single accession of ssp. \textit{parviglumis} collected from a region in which many teosinte populations appear to be the result of admixture between the two subspecies \citep{fang2012megabase}.  
+A single ssp. \textit{parviglumis} accession from the Northern extent of the range does not appear to be well-classified with these data, likely due to our relatively limited geographic and genomic sampling.
 
 \section*{Conclusions}
 ANGSD-wrapper provides an easy-to-use interface that simplifies many population genetic analyses implemented in ANGSD \citep{korneliussen2014angsd} and permits the exploration of genome-scale results through interactive visualization.
