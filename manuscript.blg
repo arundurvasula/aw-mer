@@ -1,46 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
-The style file: unsrt.bst
+The style file: apa.bst
 Database file #1: references.bib
-You've used 26 entries,
-            1791 wiz_defined-function locations,
-            618 strings with 9328 characters,
-and the built_in function-call counts, 6409 in all, are:
-= -- 519
-> -- 410
-< -- 2
-+ -- 147
-- -- 121
-* -- 513
-:= -- 1086
-add.period$ -- 82
-call.type$ -- 26
-change.case$ -- 23
-chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 244
-empty$ -- 565
-format.name$ -- 121
-if$ -- 1366
-int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 22
-newline$ -- 134
-num.names$ -- 26
-pop$ -- 53
+Warning--empty year in ngsPopGen
+You've used 28 entries,
+            1940 wiz_defined-function locations,
+            660 strings with 9877 characters,
+and the built_in function-call counts, 12629 in all, are:
+= -- 1186
+> -- 698
+< -- 11
++ -- 252
+- -- 248
+* -- 1211
+:= -- 2233
+add.period$ -- 88
+call.type$ -- 28
+change.case$ -- 257
+chr.to.int$ -- 28
+cite$ -- 29
+duplicate$ -- 408
+empty$ -- 771
+format.name$ -- 282
+if$ -- 2377
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 24
+newline$ -- 144
+num.names$ -- 84
+pop$ -- 218
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 260
 quote$ -- 0
-skip$ -- 93
+skip$ -- 304
 stack$ -- 0
-substring$ -- 382
-swap$ -- 44
+substring$ -- 784
+swap$ -- 72
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 58
-width$ -- 28
-write$ -- 289
+type$ -- 168
+warning$ -- 1
+while$ -- 92
+width$ -- 0
+write$ -- 367
+(There was 1 warning)
