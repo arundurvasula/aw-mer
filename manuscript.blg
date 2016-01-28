@@ -6,24 +6,24 @@ Database file #1: references.bib
 Warning--empty year in ngsPopGen
 You've used 28 entries,
             1940 wiz_defined-function locations,
-            660 strings with 9877 characters,
-and the built_in function-call counts, 12629 in all, are:
-= -- 1186
+            657 strings with 9824 characters,
+and the built_in function-call counts, 12611 in all, are:
+= -- 1184
 > -- 698
 < -- 11
 + -- 252
 - -- 248
-* -- 1211
-:= -- 2233
+* -- 1209
+:= -- 2231
 add.period$ -- 88
 call.type$ -- 28
 change.case$ -- 257
 chr.to.int$ -- 28
 cite$ -- 29
 duplicate$ -- 408
-empty$ -- 771
+empty$ -- 769
 format.name$ -- 282
-if$ -- 2377
+if$ -- 2373
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 24
@@ -35,7 +35,7 @@ purify$ -- 260
 quote$ -- 0
 skip$ -- 304
 stack$ -- 0
-substring$ -- 784
+substring$ -- 778
 swap$ -- 72
 text.length$ -- 2
 text.prefix$ -- 0

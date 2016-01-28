@@ -58,12 +58,11 @@ Fang, Z., Pyh{\"a}j{\"a}rvi, T., Weber, A.~L., Dawe, R.~K., Glaubitz, J.~C.,
 \newblock Megabase-scale inversion polymorphism in the wild ancestor of maize.
 \newblock {\em Genetics}, 191(3):883--894.
 
-\bibitem[\protect\astroncite{Felsenstein}{2005}]{felsenstein2005using}
-Felsenstein, J. (2005).
-\newblock Using the quantitative genetic threshold model for inferences between
-  and within species.
-\newblock {\em Philosophical Transactions of the Royal Society B: Biological
-  Sciences}, 360(1459):1427--1434.
+\bibitem[\protect\astroncite{Felsenstein}{2006}]{felsenstein2006accuracy}
+Felsenstein, J. (2006).
+\newblock Accuracy of coalescent likelihood estimates: do we need more sites,
+  more sequences, or more loci?
+\newblock {\em Molecular biology and evolution}, 23(3):691--700.
 
 \bibitem[\protect\astroncite{Fumagali}{}]{ngsPopGen}
 Fumagali, M.
