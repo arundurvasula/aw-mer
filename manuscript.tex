@@ -39,11 +39,13 @@
 
 \usepackage[colorinlistoftodos]{todonotes}
 \definecolor{flame}{rgb}{0.89, 0.35, 0.13}
+\definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
 %\setlength{\marginparwidth}{1.5cm}
 \newcommand{\jri}[1]{\todo[size=\scriptsize, color=flame]{#1}}
 \newcommand{\ad}[1]{\todo[size=\scriptsize, color=blue]{#1}}
 \newcommand{\ph}[1]{\todo[size=\scriptsize, color=pink]{#1}}
 \newcommand{\tjyk}[1]{\todo[size=\scriptsize, color=green]{#1}}
+\newcommand{\cl}[1]{\todo[size=\scriptsize, color=amethyst]{#1}}
 \newcommand{\fst}{${F_{ST}}$ }          
 \newcommand{\X}{\textcolor{red}{\bf X }}
 
@@ -72,9 +74,13 @@
 
 \begin{abstract}
 High throughput sequencing has changed many aspects of population genetics, molecular ecology, and related fields, affecting both experimental design and data analysis.
-The software package ANGSD allows users to perform a number of population genetic analyses on high-throughput sequencing data. 
+The software package ANGSD allows users to perform a number of population genetic analyses on high-throughput sequencing data.
+\cl{added text}
+ANGSD uses probabilistic approaches to calculate genome wide descriptive statistics.
 The package is specifically designed to produce more accurate results for samples with low sequencing depth and makes use of full genome data while handling a wide array of sampling and experimental designs.
 Here we present ANGSD-wrapper, a user-friendly interface for running ANGSD and visualizing results.
+\cl{added text}
+This software supports multiple types of analyses such as Site Frequency Spectrum, Genotype Likelihood estimations, Thetas diversity statistics and neutrality tests, Principal Component Analysis, Admixture, and Inbreeding coefficient calculations.
 ANGSD-wrapper includes a number of 'wrapper' scripts that facilitate configuration and execution of multi-step analyses. ANGSD-wrapper also provides interactive graphing of ANGSD results to enhance data exploration.
 We demonstrate the usefulness of ANGSD-wrapper by analyzing resequencing data from populations of wild and domesticated \textit{Zea}. 
 ANGSD-wrapper is freely available from \url{https://github.com/mojaveazure/angsd-wrapper}.
