@@ -1,6 +1,49 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: manuscript.aux
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: manuscript.aux
 The style file: apa.bst
 Database file #1: references.bib
 Warning--empty year in ngsPopGen
 Warning--empty year in Python
+You've used 35 entries,
+            1940 wiz_defined-function locations,
+            693 strings with 11195 characters,
+and the built_in function-call counts, 16366 in all, are:
+= -- 1495
+> -- 1035
+< -- 15
++ -- 380
+- -- 376
+* -- 1587
+:= -- 2935
+add.period$ -- 111
+call.type$ -- 35
+change.case$ -- 351
+chr.to.int$ -- 35
+cite$ -- 37
+duplicate$ -- 498
+empty$ -- 917
+format.name$ -- 417
+if$ -- 3032
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 27
+newline$ -- 181
+num.names$ -- 105
+pop$ -- 311
+preamble$ -- 1
+purify$ -- 359
+quote$ -- 0
+skip$ -- 373
+stack$ -- 0
+substring$ -- 887
+swap$ -- 89
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 208
+warning$ -- 2
+while$ -- 108
+width$ -- 0
+write$ -- 456
 (There were 2 warnings)
