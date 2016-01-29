@@ -91,7 +91,7 @@ While the experimental design challenges with molecular population genetic studi
 
 A number of tools have recently been published to estimate population genetic descriptive statistics using high throughput sequencing data \citep{garrigan2013popbam, purcell2007plink, danecek2011variant, hutter2006genome}. 
 However, few of these tools offer the flexibility to handle data with the characteristics of high throughput sequence data. 
-Korneliussen et al. \ph{Should be just \(2014\)} \citep{korneliussen2014angsd} recently published the software package, ANGSD, which enables users to flexibly perform a large number of common population genetic analyses, including estimation of diversity statistics, admixture analysis including Patterson's D statistic \citep{Durand:2011jd}, site frequency spectrum estimation \citep{pmid22911679}, and calculation of neutrality test statistics \citep{korneliussen_calculation_2013}. 
+\citet{korneliussen2014angsd} recently published the software package, ANGSD, which enables users to flexibly perform a large number of common population genetic analyses, including estimation of diversity statistics, admixture analysis including Patterson's D statistic \citep{Durand:2011jd}, site frequency spectrum estimation \citep{pmid22911679}, and calculation of neutrality test statistics \citep{korneliussen_calculation_2013}. 
 ANGSD works directly with the alignment formats produced from standard high throughput sequence analysis pipelines, which removes the need for the user to transform the data into a niche format. 
 One of the most important features of ANGSD is that analyses are integrated over per-site genotype likelihoods, rather than only on pre-determined variable sites. 
 This permits ANGSD to calculate common population genetic descriptive statistics on low-coverage sequencing data, and handle missingness due to variation in coverage. 
@@ -99,6 +99,7 @@ This permits ANGSD to calculate common population genetic descriptive statistics
 Here we present ANGSD-wrapper, a user-friendly interface to stable versions of ANGSD. 
 ANGSD-wrapper takes the form of a set of configuration files and `wrapper' scripts (Figure \ref{fig:supp2}) that streamline the execution of multi-step pipelines required for data analysis in ANGSD. 
 ANGSD-wrapper also eases the configuration of ANGSD-related programs such as ngsPopGen \citep{ngsPopGen}, ngsF\citep{vieira2013estimating}, and ngsAdmix \citep{pmid24026093}. 
+\ph{This could be reworded} Furthermore, ANGSD-wrapper allows for easy population genetic analysis across the sequence data provided, or hone in on a certain region or subset of regions, allowing a highly-tailored experience.
 Additionally, the wrapper scripts are written against ``frozen'' versions of ANGSD and supporting tools, for consistency of analysis. 
 Because the large volume of data associated with high throughput sequence analysis is often difficult to visualize, ANGSD-wrapper also provides a suite of interactive visualization tools to plot results and explore patterns at multiple scales.  
 We demonstrate some of the analyses possible using ANGSD-wrapper when applied to low-coverage whole-genome data from domesticated maize and two related wild teosinte subspecies. 
@@ -144,7 +145,7 @@ $ angsd-wrapper <method> <configuration_file>
 Analyses supported by ANGSD-wrapper are shown in Table \ref{tab:methods}.
 A detailed flowchart of each of these workflows is shown in Figure \ref{fig:supp2}, and additional details, documentation, a tutorial, and a wiki can be found on the GitHub page: \url{https://github.com/mojaveazure/angsd-wrapper/wiki}.
 
-The visualization software included with ANGSD-wrapper is contained within it's own directory called ``shinyGraphing.''
+\ph{Necessary?}The visualization software included with ANGSD-wrapper is contained within it's own directory called ``shinyGraphing.''
 This application is started from within ANGSD-wrapper and launched locally from a standard web browser. %This application must be started in R and can be accessed locally from a web browser. --Nope
 This software provides a graphical user interface (GUI) to quickly and interactively plot results obtained from ANGSD-wrapper.  
 Each tab in the GUI contains plots for different ANGSD methods.
