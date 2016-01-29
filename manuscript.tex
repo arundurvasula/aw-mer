@@ -98,15 +98,15 @@ This permits ANGSD to calculate common population genetic descriptive statistics
 
 Here we present ANGSD-wrapper, a user-friendly interface to stable versions of ANGSD. 
 ANGSD-wrapper takes the form of a set of configuration files and `wrapper' scripts (Figure \ref{fig:supp2}) that streamline the execution of multi-step pipelines required for data analysis in ANGSD. 
-ANGSD-wrapper also eases the configuration of ANGSD-related programs such as \tjyk{Fumagali citation doesn't show up properly}ngsPopGen \citep{ngsPopGen}, ngsF\citep{vieira2013estimating}, and ngsAdmix \citep{pmid24026093}. 
+ANGSD-wrapper also eases the configuration of ANGSD-related programs such as \tjyk{Fumagali citation doesn't show up properly}\ph{I think the citation is just 'Fumagali' and the link to the webpage. If so, then it works for me -PH}ngsPopGen \citep{ngsPopGen}, ngsF\citep{vieira2013estimating}, and ngsAdmix \citep{pmid24026093}. 
 \ph{This could be reworded} Furthermore, ANGSD-wrapper allows for easy population genetic analysis across the sequence data provided, or hone in on a certain region or subset of regions, allowing a highly-tailored experience.
-Additionally, the wrapper scripts are written against ``frozen'' versions of ANGSD and supporting tools, for consistency of analysis. 
+Additionally, the wrapper scripts are written against `frozen' versions of ANGSD and supporting tools, for consistency of analysis. 
 Because the large volume of data associated with high throughput sequence analysis is often difficult to visualize, ANGSD-wrapper also provides a suite of interactive visualization tools to plot results and explore patterns at multiple scales.  
 We demonstrate some of the analyses possible using ANGSD-wrapper when applied to low-coverage whole-genome data from domesticated maize and two related wild teosinte subspecies. 
 ANGSD-wrapper is freely available from \url{https://github.com/mojaveazure/angsd-wrapper}.
 
 \section*{Methods}
-\ph{change of language} ANGSD-wrapper is a set of configuration files and scripts written primarily in the Bash scripting language. %UNIX shell.  
+ANGSD-wrapper is a set of configuration files and scripts written primarily in the Bash scripting language. 
 The scripts can be run either on a standalone computer with a UNIX terminal, \ph{has anyone tested AW on a cluster?} or on computing clusters where they can be submitted to a queuing system such as SGE \citep{Microsystems):2001:SGE:560889.792378}, Slurm \citep{Jette02slurm:simple} or TORQUE \citep{Staples:2006:TRM:1188455.1188464}.  
 A Python installation \citep{Python} is required for some light, dynamic pre-processing of the data.
 An installation of the statistical software R \citep{Rcitation} is required to make use of the visualization tools incorporated in ANGSD-wrapper.  

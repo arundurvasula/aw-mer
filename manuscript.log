@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.28)  28 JAN 2016 18:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.28)  28 JAN 2016 18:37
 entering extended mode
 **C:/Users/Paul/aw-mer/manuscript.tex
 (C:/Users/Paul/aw-mer/manuscript.tex
@@ -842,7 +842,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 208.
 Here is how much of TeX's memory you used:
  17993 strings out of 493634
  336824 string characters out of 3143747
- 436717 words of memory out of 3000000
+ 437859 words of memory out of 3000000
  21007 multiletter control sequences out of 15000+200000
  9940 words of font info for 36 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -863,7 +863,7 @@ type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt9.pfb>
-Output written on manuscript.pdf (10 pages, 783089 bytes).
+Output written on manuscript.pdf (10 pages, 784136 bytes).
 PDF statistics:
  483 PDF objects out of 1000 (max. 8388607)
  64 named destinations out of 1000 (max. 500000)
