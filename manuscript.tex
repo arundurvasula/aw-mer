@@ -97,7 +97,7 @@ One of the most important features of ANGSD is that analyses are integrated over
 This permits ANGSD to calculate common population genetic descriptive statistics on low-coverage sequencing data, and handle missingness due to variation in coverage. 
 
 Here we present ANGSD-wrapper, a user-friendly interface to stable versions of ANGSD. 
-ANGSD-wrapper takes the form of a set of configuration files and 'wrapper' scripts (Figure \ref{fig:supp2}) that streamline the execution of multi-step pipelines required for data analysis in ANGSD. 
+ANGSD-wrapper takes the form of a set of configuration files and `wrapper' scripts (Figure \ref{fig:supp2}) that streamline the execution of multi-step pipelines required for data analysis in ANGSD. 
 ANGSD-wrapper also eases the configuration of ANGSD-related programs such as ngsPopGen \citep{ngsPopGen}, ngsF\citep{vieira2013estimating}, and ngsAdmix \citep{pmid24026093}. 
 Additionally, the wrapper scripts are written against ``frozen'' versions of ANGSD and supporting tools, for consistency of analysis. 
 Because the large volume of data associated with high throughput sequence analysis is often difficult to visualize, ANGSD-wrapper also provides a suite of interactive visualization tools to plot results and explore patterns at multiple scales.  
@@ -105,18 +105,19 @@ We demonstrate some of the analyses possible using ANGSD-wrapper when applied to
 ANGSD-wrapper is freely available from \url{https://github.com/mojaveazure/angsd-wrapper}.
 
 \section*{Methods}
-\ph{change of language} ANGSD-wrapper is a set of configuration files and scripts written primarily in the Bash scripting language.%UNIX shell.  
+\ph{change of language} ANGSD-wrapper is a set of configuration files and scripts written primarily in the Bash scripting language. %UNIX shell.  
 The scripts can be run either on a standalone computer with a UNIX terminal, \ph{has anyone tested AW on a cluster?} or on computing clusters where they can be submitted to a queuing system such as SGE \citep{Microsystems):2001:SGE:560889.792378}, Slurm \citep{Jette02slurm:simple} or TORQUE \citep{Staples:2006:TRM:1188455.1188464}.  
-A Python installation \ph{Citation} is required for some light, dynamic pre-processing of the data.
+A Python installation \citep{Python} is required for some light, dynamic pre-processing of the data.
 An installation of the statistical software R \citep{Rcitation} is required to make use of the visualization tools incorporated in ANGSD-wrapper.  
-The visualization portion of ANGSD-wrapper also requires installation of the R packages shiny \citep{shiny}, genomeIntervals \citep{genomeIntervals}, ape \citep{APE}, lattice \ph{citation}, Hmisc \ph{citation}, data.table \ph{citation}, DT \ph{citation}, and shinythemes \ph{citation}.
+The visualization portion of ANGSD-wrapper also requires installation of the R packages \texttt{Shiny} \citep{shiny}, \texttt{APE} \citep{APE}, \texttt{Lattice} \citep{lattice}, \texttt{Hmisc} \citep{Hmisc}, \texttt{data.table} \citep{datatable}, \texttt{DT} \citep{javascriptDT}, and \texttt{shinythemes} \citep{shinythemes}, as well as \texttt{genomeIntervals} \citep{genomeIntervals} from Bioconductor \citep{bioconductor} for the visualization package.
+These dependent packages are installed automatically upon first run of visualization interface.
 
 
 \begin{table}
 \begin{center}
     \begin{tabular}{ | p{3.5cm} | p{5cm} | p{2.5cm}  |}
     \hline
-    \textbf{Method} & \textbf{Calculations} & \textbf{Interactive Graphing} \\ \hline \hline
+    \textbf{Method} & \textbf{Calculations} & \textbf{Interactive Graphing} \\ \hline
     SFS     &    Site frequency spectrum  & Yes  \\ \hline     2DSFS   &    Joint site frequency spectrum, \fst & Yes  \\ \hline 
     ABBA/BABA  &  Patterson's D statistic & Yes  \\ \hline 
     Ancestral &  Extract ancestral sequence from BAM file  & No \\ \hline 
@@ -132,7 +133,7 @@ The visualization portion of ANGSD-wrapper also requires installation of the R p
 \end{table}
 
 ANGSD-wrapper is divided into scripts associated with analytical approaches implemented in ANGSD and associated software. 
-ANGSD-wrapper provides a common configuration file, \ph{renamed} \texttt{Common\_Config}, which holds variables that are likely to remain constant across analyses, including identifiers for chromosomal regions and the paths to project directories.
+ANGSD-wrapper provides a common configuration file, \texttt{Common\_Config}, which holds variables that are likely to remain constant across analyses, including identifiers for chromosomal regions and the paths to project directories.
 In ANGSD-wrapper, each method is self-contained in a shell script which uses information from the common configuration file and a method-specific configuration file. 
 Each analysis is run using a simple command:
 
@@ -194,7 +195,6 @@ A single ssp. \textit{parviglumis} accession from the Northern extent of the ran
 \section*{Conclusions}
 ANGSD-wrapper provides an easy-to-use interface that simplifies many population genetic analyses implemented in ANGSD \citep{korneliussen2014angsd} and permits the exploration of genome-scale results through interactive visualization.
 ANGSD-wrapper is under active development to incorporate updates to the ANGSD software package.  
-\jri{why is table in middle of refs? check refs for completeness. e.g. skotte is missing page numbers}
 \section*{Acknowledgements}
 We acknowledge funding support from the US National Science Foundation (IOS-1238014 to JRI and IOS-1339393 to PLM), from a University of Minnesota Doctoral Dissertation Fellowship supporting TJYK, and from the University of California Davis Plant Sciences Department. We thank members of the Ross-Ibarra and Morrell Labs for discussion and software testing. We thank the authors of ANGSD and related programs for answering questions, particularly Matteo Fumagalli and Filipe Vieira. Finally, we would like to thank Felix Andrews for statistical advice, although we did not follow it. 
 \clearpage

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.28)  28 JAN 2016 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.1.28)  28 JAN 2016 18:15
 entering extended mode
 **C:/Users/Paul/aw-mer/manuscript.tex
 (C:/Users/Paul/aw-mer/manuscript.tex
@@ -733,59 +733,41 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Warning: Marginpar on page 2 moved.
 
 
-LaTeX Warning: Marginpar on page 2 moved.
-
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 []\OT1/cmr/bx/n/10 Interactive
  []
 
 
-Overfull \hbox (0.39398pt too wide) in paragraph at lines 134--138
+Overfull \hbox (0.39398pt too wide) in paragraph at lines 135--139
 []\OT1/cmr/m/n/10 ANGSD-wrapper is di-vided into scripts as-so-ci-ated with an-
 a-lyt-i-cal ap-proaches im-ple-mented in ANGSD
  []
 
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-[2] <figures/fig1.pdf, id=119, 575.11684pt x 242.91995pt>
+[2] <figures/fig1.pdf, id=132, 575.11684pt x 242.91995pt>
 File: figures/fig1.pdf Graphic file (type pdf)
 
 <use figures/fig1.pdf>
-Package pdftex.def Info: figures/fig1.pdf used on input line 156.
+Package pdftex.def Info: figures/fig1.pdf used on input line 157.
 (pdftex.def)             Requested size: 362.37569pt x 153.06631pt.
 
-<figures/figure3big.pdf, id=120, 580.2809pt x 373.71136pt>
+<figures/figure3big.pdf, id=133, 580.2809pt x 373.71136pt>
 File: figures/figure3big.pdf Graphic file (type pdf)
 
 <use figures/figure3big.pdf>
-Package pdftex.def Info: figures/figure3big.pdf used on input line 162.
+Package pdftex.def Info: figures/figure3big.pdf used on input line 163.
 (pdftex.def)             Requested size: 362.37569pt x 233.38654pt.
 
-<figures/mt4labeled.pdf, id=135, 685.88919pt x 298.92397pt>
+<figures/mt4labeled.pdf, id=148, 685.88919pt x 298.92397pt>
 File: figures/mt4labeled.pdf Graphic file (type pdf)
 
 <use figures/mt4labeled.pdf>
-Package pdftex.def Info: figures/mt4labeled.pdf used on input line 180.
+Package pdftex.def Info: figures/mt4labeled.pdf used on input line 181.
 (pdftex.def)             Requested size: 362.37569pt x 157.93176pt.
  [3 <./figures/fig1.pdf>] [4 <./figures/figure3big.pdf> <./figures/mt4labeled.p
 df>] [5] (manuscript.bbl [6
 
 ]) (supp.tex
-<figures/Wiki_Workflow.pdf, id=271, 1565.1935pt x 1895.42725pt>
+<figures/Wiki_Workflow.pdf, id=284, 1565.1935pt x 1895.42725pt>
 File: figures/Wiki_Workflow.pdf Graphic file (type pdf)
 
 <use figures/Wiki_Workflow.pdf>
@@ -797,7 +779,7 @@ s been already used, duplicate ignored
                    \relax 
 l.9 ...or all methods available in ANGSD-wrapper.}
                                                   
-<figures/admixture.pdf, id=272, 722.7pt x 817.59242pt>
+<figures/admixture.pdf, id=285, 722.7pt x 817.59242pt>
 File: figures/admixture.pdf Graphic file (type pdf)
 
 <use figures/admixture.pdf>
@@ -809,7 +791,24 @@ s been already used, duplicate ignored
                    \relax 
 l.16 ...=2 (top), K=3 (middle), and K=4 (bottom).}
                                                   
-Overfull \hbox (9.82344pt too wide) in paragraph at lines 22--49
+<figures/supp3.pdf, id=286, 559.65729pt x 260.15945pt>
+File: figures/supp3.pdf Graphic file (type pdf)
+ <use figures/supp3.pdf>
+Package pdftex.def Info: figures/supp3.pdf used on input line 22.
+(pdftex.def)             Requested size: 452.9679pt x 210.57317pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 ...d between the maize and teosinte samples.}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.3}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.23 ...d between the maize and teosinte samples.}
+                                                  
+Overfull \hbox (9.82344pt too wide) in paragraph at lines 29--56
  [] 
  []
 
@@ -817,34 +816,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 ...egion 15000000-25000000 on chromosome 10.}
+l.56 ...egion 15000000-25000000 on chromosome 10.}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{table.1}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.49 ...egion 15000000-25000000 on chromosome 10.}
-                                                  
-<figures/supp3.pdf, id=273, 559.65729pt x 260.15945pt>
-File: figures/supp3.pdf Graphic file (type pdf)
- <use figures/supp3.pdf>
-Package pdftex.def Info: figures/supp3.pdf used on input line 56.
-(pdftex.def)             Requested size: 452.9679pt x 210.57317pt.
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.57 ...d between the maize and teosinte samples.}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{figure.3}) has been already used, duplicat
-e ignored
-<to be read again> 
-                   \relax 
-l.57 ...d between the maize and teosinte samples.}
+l.56 ...egion 15000000-25000000 on chromosome 10.}
                                                   ) [7] [8 <./figures/Wiki_Work
-flow.pdf>] [9 <./figures/admixture.pdf>]
+flow.pdf>] [9 <./figures/admixture.pdf>] [10 <./figures/supp3.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 206.
- [10 <./figures/supp3.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
 
 (manuscript.aux)
@@ -855,10 +836,10 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
  ) 
 Here is how much of TeX's memory you used:
- 18009 strings out of 493634
- 337349 string characters out of 3143747
- 455699 words of memory out of 3000000
- 21025 multiletter control sequences out of 15000+200000
+ 17965 strings out of 493634
+ 336232 string characters out of 3143747
+ 425117 words of memory out of 3000000
+ 20982 multiletter control sequences out of 15000+200000
  9940 words of font info for 36 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  48i,13n,76p,623b,999s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -878,9 +859,9 @@ type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt9.pfb>
-Output written on manuscript.pdf (10 pages, 777735 bytes).
+Output written on manuscript.pdf (10 pages, 781591 bytes).
 PDF statistics:
- 466 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
+ 479 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
