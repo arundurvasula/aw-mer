@@ -43,6 +43,7 @@
 \newcommand{\jri}[1]{\todo[size=\scriptsize, color=flame]{#1}}
 \newcommand{\ad}[1]{\todo[size=\scriptsize, color=blue]{#1}}
 \newcommand{\ph}[1]{\todo[size=\scriptsize, color=pink]{#1}}
+\newcommand{\tjyk}[1]{\todo[size=\scriptsize, color=green]{#1}}
 \newcommand{\fst}{${F_{ST}}$ }          
 \newcommand{\X}{\textcolor{red}{\bf X }}
 
@@ -90,15 +91,14 @@ This is especially true of studies that span multiple subpopulations, as this ba
 While the experimental design challenges with molecular population genetic studies have existed for at least a decade, high throughput sequencing brings the technical challenges of highly variable coverage, missing data, and high per-nucleotide error rates.
 
 A number of tools have recently been published to estimate population genetic descriptive statistics using high throughput sequencing data \citep{garrigan2013popbam, purcell2007plink, danecek2011variant, hutter2006genome}. 
-However, few of these tools offer the flexibility to handle data with the characteristics of high throughput sequence data. 
-\citet{korneliussen2014angsd} recently published the software package, ANGSD, which enables users to flexibly perform a large number of common population genetic analyses, including estimation of diversity statistics, admixture analysis including Patterson's D statistic \citep{Durand:2011jd}, site frequency spectrum estimation \citep{pmid22911679}, and calculation of neutrality test statistics \citep{korneliussen_calculation_2013}. 
+ \citet{korneliussen2014angsd} recently published the software package, ANGSD, which enables users to flexibly perform a large number of common population genetic analyses, including estimation of diversity statistics, admixture analysis including Patterson's D statistic \citep{Durand:2011jd}, site frequency spectrum estimation \citep{pmid22911679}, and calculation of neutrality test statistics \citep{korneliussen_calculation_2013}. 
 ANGSD works directly with the alignment formats produced from standard high throughput sequence analysis pipelines, which removes the need for the user to transform the data into a niche format. 
 One of the most important features of ANGSD is that analyses are integrated over per-site genotype likelihoods, rather than only on pre-determined variable sites. 
 This permits ANGSD to calculate common population genetic descriptive statistics on low-coverage sequencing data, and handle missingness due to variation in coverage. 
 
 Here we present ANGSD-wrapper, a user-friendly interface to stable versions of ANGSD. 
 ANGSD-wrapper takes the form of a set of configuration files and `wrapper' scripts (Figure \ref{fig:supp2}) that streamline the execution of multi-step pipelines required for data analysis in ANGSD. 
-ANGSD-wrapper also eases the configuration of ANGSD-related programs such as ngsPopGen \citep{ngsPopGen}, ngsF\citep{vieira2013estimating}, and ngsAdmix \citep{pmid24026093}. 
+ANGSD-wrapper also eases the configuration of ANGSD-related programs such as \tjyk{Fumagali citation doesn't show up properly}ngsPopGen \citep{ngsPopGen}, ngsF\citep{vieira2013estimating}, and ngsAdmix \citep{pmid24026093}. 
 \ph{This could be reworded} Furthermore, ANGSD-wrapper allows for easy population genetic analysis across the sequence data provided, or hone in on a certain region or subset of regions, allowing a highly-tailored experience.
 Additionally, the wrapper scripts are written against ``frozen'' versions of ANGSD and supporting tools, for consistency of analysis. 
 Because the large volume of data associated with high throughput sequence analysis is often difficult to visualize, ANGSD-wrapper also provides a suite of interactive visualization tools to plot results and explore patterns at multiple scales.  
@@ -165,6 +165,7 @@ The Shiny server automatically parses ANGSD output files and creates the resulti
 \caption{Summary statistics for {\it Zea mays}. Derived site frequency spectra for A. maize and B. teosinte. C. distribution of pairwise differences for maize (blue) and teosinte (orange). Pairwise diversity results are visualized separately from the interactive graphics and colors were added to A and B using a custom script.}
 \label{fig:figure3}
 \end{figure}
+\tjyk{Should this start a "Results" section?}
 As a demonstration of analyses in ANGSD-wrapper, we explore patterns of diversity in a single genomic region of domesticated maize and wild teosinte. 
 We used a subset of the resequenced samples from the Maize HapMap2 project (Table \ref{tab:samples}) and calculated summary statistics using a 10Mb region on chromosome 10 \citep{chia2012maize}. 
 The data are available at \url{https://figshare.com/articles/Example_Data_tar_bz2/2063442}. 
