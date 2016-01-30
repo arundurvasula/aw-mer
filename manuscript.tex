@@ -74,14 +74,11 @@
 \maketitle
 
 \begin{abstract}
-High throughput sequencing has changed many aspects of population genetics, molecular ecology, and related fields, affecting both experimental design and data analysis.
-The software package ANGSD allows users to perform a number of population genetic analyses on high-throughput sequencing data.
+High throughput sequencing has changed many aspects of population genetics, molecular ecology, and related fields, affecting both experimental design and data analysis. The software package ANGSD allows users to perform a number of population genetic analyses on high-throughput sequencing data.
 % \cl{added text}
-ANGSD uses probabilistic approaches to calculate genome wide descriptive statistics.
-The package is specifically designed to produce more accurate results for samples with low sequencing depth and makes use of full genome data while handling a wide array of sampling and experimental designs.
-Here we present ANGSD-wrapper, a user-friendly interface for running ANGSD and visualizing results.
+ANGSD uses probabilistic approaches to calculate genome-wide descriptive statistics. The package makes use of genotype likelihood estimates rather than SNP calls and is specifically designed to produce more accurate results for samples with low sequencing depth. ANGSD makes use of full genome data while handling a wide array of sampling and experimental designs. Here we present ANGSD-wrapper, a user-friendly interface for running ANGSD and visualizing results.
 % \cl{added text}
-This software supports multiple types of analyses such as Site Frequency Spectrum, Genotype Likelihood estimations, Thetas diversity statistics and neutrality tests, Principal Component Analysis, Admixture, and Inbreeding coefficient calculations.
+ANGSD-wrapper software supports multiple types of analyses including providing estimates of nucleotide sequence diversity and performing neutrality tests. ANGSD-wrapper also provides support for Principal Component Analysis, estimation of admixture proportions for individuals samples, and calculation of statistics that quantify recent introgression. 
 %ANGSD-wrapper includes a number of 'wrapper' scripts that facilitate configuration and execution of multi-step analyses.
 ANGSD-wrapper also provides interactive graphing of ANGSD results to enhance data exploration.
 We demonstrate the usefulness of ANGSD-wrapper by analyzing resequencing data from populations of wild and domesticated \textit{Zea}. 
@@ -90,28 +87,28 @@ ANGSD-wrapper is freely available from \url{https://github.com/mojaveazure/angsd
 
 \section*{Introduction}
 
-High throughput sequencing has revolutionized evolutionary genetics, allowing researchers to quickly assay large numbers of individuals or survey fine-scale patterns of variation across the genome. 
-Application of these approaches has led to changes in both experimental design and data analysis \citep{ekblom2011applications}.
-Many popular software packages used by researchers for analysis of comparative resequencing data \citep[see][]{excoffier2006computer} were not designed to handle these novel data types or efficiently analyze the large volumes of data now being generated. 
+High throughput sequencing has revolutionized evolutionary genetics, allowing researchers to quickly assay large numbers of individuals or fine-scale variation across the genome. Application of these approaches has led to changes in both experimental design and data analysis \citep{ekblom2011applications}. Many popular software packages used by researchers for analysis of comparative resequencing data \citep[see][]{excoffier2006computer} were not designed to handle these novel data types or efficiently analyze the large volumes of data now being generated. 
 Despite the decreasing cost of sequencing, researchers must allocate finite resources and balance the depth of sequencing and the breadth of a sample. 
 This poses a challenge for population genetics analysis, which generally requires accurate polymorphism calls in a broad sample. 
-This is especially true of studies that span multiple subpopulations, as this balance must be met for each partition \citep{pluzhnikov1996optimal, felsenstein2006accuracy}. 
-While the experimental design challenges with molecular population genetic studies have existed for at least a decade, high throughput sequencing brings the technical challenges of highly variable coverage, missing data, and high per-nucleotide error rates.
+This is especially true of studies that span multiple populations, as this balance must be met for each partition of the sample \citep{pluzhnikov1996optimal, felsenstein2006accuracy}. 
+While the experimental design challenges in molecular population genetic studies have existed for at least two decade, high throughput sequencing brings the technical challenges of highly variable coverage, missing data, and high per-nucleotide error rates.
 
 A number of tools have recently been published to estimate population genetic descriptive statistics using high throughput sequencing data \citep{garrigan2013popbam, purcell2007plink, danecek2011variant, hutter2006genome}. 
  \citet{korneliussen2014angsd} recently published the software package, ANGSD, which enables users to flexibly perform a large number of common population genetic analyses, including estimation of diversity statistics, admixture analysis including Patterson's D statistic \citep{Durand:2011jd}, site frequency spectrum estimation \citep{pmid22911679}, and calculation of neutrality test statistics \citep{korneliussen_calculation_2013}. 
 ANGSD works directly with the alignment formats produced from standard high throughput sequence analysis pipelines, which removes the need for the user to transform the data into a niche format. 
 One of the most important features of ANGSD is that analyses are integrated over per-site genotype likelihoods, rather than only on pre-determined variable sites. 
 This permits ANGSD to calculate common population genetic descriptive statistics on low-coverage sequencing data, and handle missingness due to variation in coverage. 
+% \plm{this would really benefit from a citation}
+% \plm{below I'm confused as to how quotes names should appear. We have both `word' and ``word''.}
 
-Here we present ANGSD-wrapper, a user-friendly interface to stable versions of ANGSD. 
-ANGSD-wrapper takes the form of a set of configuration files and `wrapper' scripts (Figure \ref{fig:supp2}) that streamline the execution of multi-step pipelines required for data analysis in ANGSD. 
+Here we present ANGSD-wrapper, a user-friendly interface to ANGSD. 
+ANGSD-wrapper takes the form of a set of configuration files and `wrapper` scripts (Figure \ref{fig:supp2}) that streamline the execution of multi-step pipelines required for data analysis in ANGSD. 
 ANGSD-wrapper also eases the configuration of ANGSD-related programs such as ngsPopGen \citep{ngsPopGen}, ngsF\citep{vieira2013estimating}, and ngsAdmix \citep{pmid24026093}. %\tjyk{Fumagali citation doesn't show up properly}\ph{I think the citation is just 'Fumagali' and the link to the webpage. If so, then it works for me -PH} \ad{yes, there's no citation other than the github repo (and no DOI there)}
 % \ph{This could be reworded} 
-Furthermore, ANGSD-wrapper allows for easy population genetic analysis across the sequence data provided, or hone in on a certain region or subset of regions, allowing a highly-tailored experience.
-Additionally, the wrapper scripts are written against `frozen' versions of ANGSD and supporting tools, for consistency of analysis. 
+Furthermore, ANGSD-wrapper permits whole genome analysis of population genetic data or the potential to focus a set genomic regions.
+The wrapper scripts are written against `frozen` versions of ANGSD and supporting tools, for consistency of analysis. 
 Because the large volume of data associated with high throughput sequence analysis is often difficult to visualize, ANGSD-wrapper also provides a suite of interactive visualization tools to plot results and explore patterns at multiple scales.  
-We demonstrate some of the analyses possible using ANGSD-wrapper when applied to low-coverage whole-genome data from domesticated maize and two related wild teosinte subspecies. 
+We demonstrate some of the analyses possible using ANGSD-wrapper when applied to low-coverage, whole-genome data from domesticated maize and two related wild teosinte subspecies. 
 ANGSD-wrapper is freely available from \url{https://github.com/mojaveazure/angsd-wrapper}.
 
 \section*{Methods}
@@ -119,7 +116,7 @@ ANGSD-wrapper is a set of configuration files and scripts written primarily in t
 The scripts can be run either on a standalone computer with a UNIX terminal, or on computing clusters where they can be submitted to a queuing system such as SGE \citep{Microsystems):2001:SGE:560889.792378}, Slurm \citep{Jette02slurm:simple} or TORQUE \citep{Staples:2006:TRM:1188455.1188464}.  % \ph{has anyone tested AW on a cluster?} \ad{yep I have. I logged into a compute node via srun and ran it that way}
 A Python installation \citep{Python} is required for some light, dynamic pre-processing of the data.
 An installation of the statistical software R \citep{Rcitation} is required to make use of the visualization tools incorporated in ANGSD-wrapper.  
-The visualization portion of ANGSD-wrapper also requires installation of the R packages \texttt{Shiny} \citep{shiny}, \texttt{APE} \citep{APE}, \texttt{Lattice} \citep{lattice}, \texttt{Hmisc} \citep{Hmisc}, \texttt{data.table} \citep{datatable}, \texttt{DT} \citep{javascriptDT}, and \texttt{shinythemes} \citep{shinythemes}, as well as \texttt{genomeIntervals} \citep{genomeIntervals} from Bioconductor \citep{bioconductor} for the visualization package.
+The visualization portion of ANGSD-wrapper also requires installation of the R packages \texttt{Shiny} \citep{shiny}, \texttt{APE} \citep{APE}, \texttt{Lattice} \citep{lattice}, \texttt{Hmisc} \citep{Hmisc}, \texttt{data.table} \citep{datatable}, \texttt{DT} \citep{javascriptDT}, and \texttt{shinythemes} \citep{shinythemes}, as well as \texttt{genomeIntervals} \citep{genomeIntervals} from Bioconductor \citep{bioconductor}.
 These dependent packages are installed automatically upon first run of visualization interface.
 
 
@@ -155,7 +152,7 @@ Analyses supported by ANGSD-wrapper are shown in Table \ref{tab:methods}.
 A detailed flowchart of each of these workflows is shown in Figure \ref{fig:supp2}, and additional details, documentation, a tutorial, and a wiki can be found on the GitHub page: \url{https://github.com/mojaveazure/angsd-wrapper/wiki}.
 
 % \ph{Necessary?} \ad{changed the wording}
-The visualization software included with ANGSD-wrapper is contained in a directory called ``shinyGraphing.''
+The visualization software included with ANGSD-wrapper is contained in a directory called `shinyGraphing.`
 This application is started from within ANGSD-wrapper and launched locally from a standard web browser. 
 This software provides a graphical user interface (GUI) to quickly and interactively plot results obtained from ANGSD-wrapper.  
 Each tab in the GUI contains plots for different ANGSD methods.
@@ -174,7 +171,7 @@ The Shiny server automatically parses ANGSD output files and creates the resulti
 \begin{figure}
 \centering
 \includegraphics[width=0.8\linewidth]{figures/figure3big.pdf}
-\caption{Summary statistics for {\it Zea mays}. Derived site frequency spectra for A. maize and B. teosinte. C. distribution of pairwise nucleotide diversity for maize (blue) and teosinte (orange). Mean values for each taxa are represented by corresponding vertical lines. Pairwise nucleotide diversity results are visualized separately from the interactive graphics and colors were added to A and B using a custom script.}
+\caption{Summary statistics for {\it Zea mays}. Derived site frequency spectra for A. maize and B. teosinte. C. distribution of pairwise nucleotide diversity for maize (blue) and teosinte (orange). Mean values for each taxon are represented by corresponding vertical lines. Pairwise nucleotide diversity results are visualized separately from the interactive graphics and colors were added to A and B using a custom script.}
 \label{fig:figure3}
 \end{figure}
 
@@ -195,7 +192,7 @@ There are no genes in this region that have  been identified as potential domest
 \begin{figure}
 \centering
 \includegraphics[width=0.8\linewidth]{figures/mt4labeled.pdf}
-\caption{Admixture analysis for {\it Zea mays} ssp. {\it mays}, {\it Zea mays} ssp. {\it parviglumis}, and {\it Zea mays} ssp. {\it mexicana} (\textit{mex}) with colors representing the K=4 source populations. 
+\caption{Admixture analysis for {\it Zea mays} ssp. {\it mays}, {\it Zea mays} ssp. {\it parviglumis}, and {\it Zea mays} ssp. {\it mexicana} (\textit{mex}) with colors representing the {\it K}=4 source populations. 
 Individuals are shown in the same order as Table \ref{tab:samples}. }
 \label{fig:admixture}
 \end{figure}
@@ -203,15 +200,16 @@ Individuals are shown in the same order as Table \ref{tab:samples}. }
 Finally, we include two samples of the related wild teosinte \textit{Zea mays} ssp. \textit{mexicana} to assess evidence for admixture.  
 Using the ``Admixture'' method, which implements an estimate of admixture proportion from genotype likelihoods \citep{pmid24026093}, we identify structure within domesticated maize separating three high-latitude temperate landraces from the other tropical accessions (Figure \ref{fig:admixture}). 
 This analysis is a supervised method that assigns proportions of the each individual's genome to a putative source population, represented by the colors. 
-We ran this analysis over a range of number of ancestral populations (K= 2, 3, 4; See Figure \ref{fig:suppadmix}) and chose the value with the maximum likelihood while keeping the number of parameters as low as possible. 
+We ran this analysis over a range of number of ancestral populations ({\it K}= 2, 3, 4; See Figure \ref{fig:suppadmix}) and chose the value with the maximum likelihood while keeping the number of parameters as low as possible. 
 In maize, we see that most individuals come from one source population (dark grey or dark blue), which is evidence for no admixture between these lowland maize samples and  ssp. \textit{mexicana}, and is consistent with an independent analysis from SNP genotyping \citep{hufford2013genomic}.
 \textit{Zea mays} ssp. \textit{mexicana} clusters into its own group (orange), along with a single accession of ssp. \textit{parviglumis} collected from a region in which many teosinte populations appear to be the result of admixture between the two subspecies \citep{fang2012megabase}.  
-A single ssp. \textit{parviglumis} accession from the Northern extent of the range does not appear to be well-classified with these data, likely due to our relatively limited geographic and genomic sampling.
+A single ssp. \textit{parviglumis} accession from the northern extent of the range does not appear to be well-classified with these data, likely due to our relatively limited geographic and genomic sampling.
+% \plm{"does not appear to be well-classified with these data is very vague"}
 
 \section*{Conclusions}
 ANGSD-wrapper provides an easy-to-use interface that simplifies many population genetic analyses implemented in ANGSD \citep{korneliussen2014angsd} and permits the exploration of genome-scale results through interactive visualization.
 ANGSD-wrapper is under active development to incorporate updates to the ANGSD software package.  
-\section*{Acknowledgements}
+\section*{Acknowledgments}
 We acknowledge funding support from the US National Science Foundation (IOS-1238014 to JRI and IOS-1339393 to PLM), from a University of Minnesota Doctoral Dissertation Fellowship supporting TJYK, and from the University of California Davis Plant Sciences Department. We thank members of the Ross-Ibarra and Morrell Labs for discussion and software testing. We thank the authors of ANGSD and related programs for answering questions, particularly Matteo Fumagalli and Filipe Vieira. Finally, we would like to thank Felix Andrews for statistical advice, although we did not follow it. 
 \clearpage
 \bibliographystyle{apa}
