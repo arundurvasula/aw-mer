@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  1 FEB 2016 11:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  1 FEB 2016 12:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -710,54 +710,235 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 97.
- [2]
+
+
+Package natbib Warning: Citation `ekblom2011applications' on page 2 undefined o
+n input line 103.
+
+
+Package natbib Warning: Citation `excoffier2006computer' on page 2 undefined on
+ input line 104.
+
+
+Package natbib Warning: Citation `pluzhnikov1996optimal' on page 2 undefined on
+ input line 106.
+
+
+Package natbib Warning: Citation `felsenstein2006accuracy' on page 2 undefined 
+on input line 106.
+
+
+Package natbib Warning: Citation `garrigan2013popbam' on page 2 undefined on in
+put line 109.
+
+
+Package natbib Warning: Citation `purcell2007plink' on page 2 undefined on inpu
+t line 109.
+
+
+Package natbib Warning: Citation `danecek2011variant' on page 2 undefined on in
+put line 109.
+
+
+Package natbib Warning: Citation `hutter2006genome' on page 2 undefined on inpu
+t line 109.
+
+
+Package natbib Warning: Citation `korneliussen2014angsd' on page 2 undefined on
+ input line 110.
+
+
+Package natbib Warning: Citation `Durand:2011jd' on page 2 undefined on input l
+ine 110.
+
+
+Package natbib Warning: Citation `pmid22911679' on page 2 undefined on input li
+ne 110.
+
+
+Package natbib Warning: Citation `korneliussen_calculation_2013' on page 2 unde
+fined on input line 110.
+
+[2]
+
+LaTeX Warning: Reference `fig:supp2' on page 3 undefined on input line 116.
+
+
+Package natbib Warning: Citation `ngsPopGen' on page 3 undefined on input line 
+117.
+
+
+Package natbib Warning: Citation `vieira2013estimating' on page 3 undefined on 
+input line 117.
+
+
+Package natbib Warning: Citation `pmid24026093' on page 3 undefined on input li
+ne 117.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 122.
+
+Package natbib Warning: Citation `Microsystems):2001:SGE:560889.792378' on page
+ 3 undefined on input line 126.
+
+
+Package natbib Warning: Citation `Jette02slurm:simple' on page 3 undefined on i
+nput line 126.
+
+
+Package natbib Warning: Citation `Staples:2006:TRM:1188455.1188464' on page 3 u
+ndefined on input line 126.
+
+
+Package natbib Warning: Citation `Python' on page 3 undefined on input line 127
+.
+
+
+Package natbib Warning: Citation `Rcitation' on page 3 undefined on input line 
+127.
+
+
+Package natbib Warning: Citation `shiny' on page 3 undefined on input line 128.
+
+
+
+Package natbib Warning: Citation `APE' on page 3 undefined on input line 128.
+
+
+Package natbib Warning: Citation `lattice' on page 3 undefined on input line 12
+8.
+
+
+Package natbib Warning: Citation `Hmisc' on page 3 undefined on input line 128.
+
+
+
+Package natbib Warning: Citation `datatable' on page 3 undefined on input line 
+128.
+
+
+Package natbib Warning: Citation `javascriptDT' on page 3 undefined on input li
+ne 128.
+
+
+Package natbib Warning: Citation `shinythemes' on page 3 undefined on input lin
+e 128.
+
+
+Package natbib Warning: Citation `genomeIntervals' on page 3 undefined on input
+ line 128.
+
+
+Package natbib Warning: Citation `bioconductor' on page 3 undefined on input li
+ne 128.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 137--137
 []\OT1/cmr/bx/n/10 Interactive
  []
 
-[3] <figures/fig1.pdf, id=134, 575.11684pt x 242.91995pt>
-File: figures/fig1.pdf Graphic file (type pdf)
+[3]
 
-<use figures/fig1.pdf>
+LaTeX Warning: Reference `tab:methods' on page 4 undefined on input line 160.
+
+
+LaTeX Warning: Reference `fig:supp2' on page 4 undefined on input line 161.
+
+
+LaTeX Warning: Reference `fig:theta' on page 4 undefined on input line 168.
+
+<figures/fig1.pdf, id=41, 575.11684pt x 242.91995pt>
+File: figures/fig1.pdf Graphic file (type pdf)
+ <use figures/fig1.pdf>
 Package pdftex.def Info: figures/fig1.pdf used on input line 173.
 (pdftex.def)             Requested size: 364.19667pt x 153.83359pt.
 
-<figures/figure3big.pdf, id=135, 580.2809pt x 373.71136pt>
+<figures/figure3big.pdf, id=42, 580.2809pt x 373.71136pt>
 File: figures/figure3big.pdf Graphic file (type pdf)
 
 <use figures/figure3big.pdf>
 Package pdftex.def Info: figures/figure3big.pdf used on input line 181.
 (pdftex.def)             Requested size: 364.19667pt x 234.55553pt.
- [4] [5 <./figures/fig1.pdf> <./figures/figure3big.pdf>]
-./manuscript.tex:206: Undefined control sequence.
-<argument> ...esults using other values of \texit 
-                                                  {K} see Figure \ref {fig:s...
-l.206 ...texit{K} see Figure \ref{fig:suppadmix}.}
-                                                  
-? 
-./manuscript.tex:206: Undefined control sequence.
-<argument> ...esults using other values of \texit 
-                                                  {K} see Figure \ref {fig:s...
-l.206 ...texit{K} see Figure \ref{fig:suppadmix}.}
-                                                  
-? 
-./manuscript.tex:206: Undefined control sequence.
-<argument> ...esults using other values of \texit 
-                                                  {K} see Figure \ref {fig:s...
-l.206 ...texit{K} see Figure \ref{fig:suppadmix}.}
-                                                  
-? 
-<figures/mt4labeled.pdf, id=232, 685.88919pt x 298.92397pt>
+
+
+LaTeX Warning: Reference `tab:samples' on page 4 undefined on input line 187.
+
+
+Package natbib Warning: Citation `chia2012maize' on page 4 undefined on input l
+ine 187.
+
+
+LaTeX Warning: Reference `tab:methods' on page 4 undefined on input line 194.
+
+[4] [5 <./figures/fig1.pdf> <./figures/figure3big.pdf>]
+
+LaTeX Warning: Reference `fig:figure3' on page 6 undefined on input line 198.
+
+
+Package natbib Warning: Citation `eyre1998investigation' on page 6 undefined on
+ input line 198.
+
+
+Package natbib Warning: Citation `Beissinger031666' on page 6 undefined on inpu
+t line 198.
+
+
+LaTeX Warning: Reference `fig:figure3' on page 6 undefined on input line 199.
+
+
+Package natbib Warning: Citation `hufford2012comparative' on page 6 undefined o
+n input line 200.
+
+
+Package natbib Warning: Citation `hufford2012comparative' on page 6 undefined o
+n input line 201.
+
+
+LaTeX Warning: Reference `fig:suppfst' on page 6 undefined on input line 201.
+
+
+LaTeX Warning: Reference `tab:samples' on page 6 undefined on input line 206.
+
+
+LaTeX Warning: Reference `fig:suppadmix' on page 6 undefined on input line 206.
+
+
+
+LaTeX Warning: Reference `tab:samples' on page 6 undefined on input line 206.
+
+
+LaTeX Warning: Reference `fig:suppadmix' on page 6 undefined on input line 206.
+
+
+<figures/mt4labeled.pdf, id=123, 685.88919pt x 298.92397pt>
 File: figures/mt4labeled.pdf Graphic file (type pdf)
 
 <use figures/mt4labeled.pdf>
 Package pdftex.def Info: figures/mt4labeled.pdf used on input line 207.
 (pdftex.def)             Requested size: 364.19667pt x 158.72542pt.
- [6 <./figures/mt4labeled.pdf>] [7]
-(./manuscript.bbl [8
+
+
+Package natbib Warning: Citation `pmid24026093' on page 6 undefined on input li
+ne 212.
+
+
+LaTeX Warning: Reference `fig:admixture' on page 6 undefined on input line 213.
+
+
+
+Package natbib Warning: Citation `fang2012megabase' on page 6 undefined on inpu
+t line 214.
+
+
+Package natbib Warning: Citation `hufford2013genomic' on page 6 undefined on in
+put line 215.
+
+[6 <./figures/mt4labeled.pdf>]
+
+Package natbib Warning: Citation `korneliussen2014angsd' on page 7 undefined on
+ input line 219.
+
+[7] (./manuscript.bbl [8
 
 ]) (./supp.texpdfTeX warning (ext4): destination with the same identifier (name
 {figure.1}) has been already used, duplicate ignored
@@ -765,7 +946,7 @@ Package pdftex.def Info: figures/mt4labeled.pdf used on input line 207.
                    \relax 
 l.8 ...or all methods available in ANGSD-wrapper.}
                                                   
-<figures/Big_Workflow_newAW.pdf, id=304, 1565.1935pt x 1895.42725pt>
+<figures/Big_Workflow_newAW.pdf, id=192, 1565.1935pt x 1895.42725pt>
 File: figures/Big_Workflow_newAW.pdf Graphic file (type pdf)
 
 <use figures/Big_Workflow_newAW.pdf>
@@ -777,7 +958,7 @@ s been already used, duplicate ignored
                    \relax 
 l.15 ...=2 (top), K=3 (middle), and K=4 (bottom).}
                                                   
-<figures/admixture.pdf, id=305, 722.7pt x 817.59242pt>
+<figures/admixture.pdf, id=193, 722.7pt x 817.59242pt>
 File: figures/admixture.pdf Graphic file (type pdf)
 
 <use figures/admixture.pdf>
@@ -795,7 +976,7 @@ e ignored
                    \relax 
 l.22 ...d between the maize and teosinte samples.}
                                                   
-<figures/supp3.pdf, id=306, 559.65729pt x 260.15945pt>
+<figures/supp3.pdf, id=194, 559.65729pt x 260.15945pt>
 File: figures/supp3.pdf Graphic file (type pdf)
  <use figures/supp3.pdf>
 Package pdftex.def Info: figures/supp3.pdf used on input line 23.
@@ -817,25 +998,40 @@ Overfull \hbox (7.54723pt too wide) in paragraph at lines 30--58
  []
 
 )
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 230.
- [9] [10 <./figures/Big_Workflow_newAW.pdf>] [11 <./figures/admixture.pdf>]
+[9] [10 <./figures/Big_Workflow_newAW.pdf>] [11 <./figures/admixture.pdf>]
 [12 <./figures/supp3.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
- (./manuscript.aux)
+ (./manuscript.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 230.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 230.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 230.
  ) 
 Here is how much of TeX's memory you used:
- 16598 strings out of 493315
- 292614 string characters out of 6137904
- 387108 words of memory out of 5000000
- 19681 multiletter control sequences out of 15000+600000
+ 16596 strings out of 493315
+ 292597 string characters out of 6137904
+ 384278 words of memory out of 5000000
+ 19679 multiletter control sequences out of 15000+600000
  10240 words of font info for 37 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,13n,53p,601b,1043s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,13n,53p,601b,1767s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -853,10 +1049,10 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive
 3/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2013/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2013/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on manuscript.pdf (12 pages, 731011 bytes).
+Output written on manuscript.pdf (12 pages, 727392 bytes).
 PDF statistics:
- 500 PDF objects out of 1000 (max. 8388607)
- 400 compressed objects within 4 object streams
+ 406 PDF objects out of 1000 (max. 8388607)
+ 308 compressed objects within 4 object streams
  62 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
