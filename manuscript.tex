@@ -3,7 +3,7 @@
 %% packages
 \usepackage{color}
 \usepackage{pgf}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=2.5cm, top=3cm]{geometry}
 \usepackage[normalem]{ulem}
 \usepackage{cite}
 \usepackage{natbib}
@@ -14,7 +14,11 @@
             linkcolor=red,
             urlcolor=blue,
             citecolor=gray]{hyperref}
- 
+\usepackage{setspace}
+\usepackage{lineno}
+\linenumbers
+\doublespacing
+
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
@@ -66,12 +70,19 @@
 \affil[*]{email: rossibarra@ucdavis.edu}
 
 
+
 \renewcommand\Authands{ and }
 
 \begin{document}
 
 \title{ANGSD-wrapper: utilities for analyzing next generation sequencing data}
 \maketitle
+
+Running head: ANGSD-wrapper
+
+Keywords: software, visualization, \textit{Zea}, domestication, population genetics
+
+\pagebreak
 
 \begin{abstract}
 High throughput sequencing has changed many aspects of population genetics, molecular ecology, and related fields, affecting both experimental design and data analysis. 
@@ -120,6 +131,7 @@ These dependent packages are installed automatically upon first run of the visua
 
 \begin{table}
 \begin{center}
+    \caption{Table of methods implemented in ANGSD-wrapper}
     \begin{tabular}{ | p{3.5cm} | p{5cm} | p{2.5cm}  |}
     \hline
     \textbf{Method} & \textbf{Calculations} & \textbf{Interactive Graphing} \\ \hline
@@ -132,7 +144,6 @@ These dependent packages are installed automatically upon first run of the visua
     Inbreeding & Calculate per-individual inbreeding coefficients with ngsF & No  \\ \hline 
     Admixture  & Perform admixture analysis & Yes  \\ \hline 
     \end{tabular}
-    \caption{Table of methods implemented in ANGSD-wrapper}
     \label{tab:methods}
     \end{center}
 \end{table}
@@ -158,20 +169,20 @@ The Shiny server automatically parses ANGSD output files and creates the resulti
 
 \begin{figure}
 \centering
-\includegraphics[width=0.8\linewidth]{figures/fig1.pdf}
 \caption{Visualization of Watterson's $\theta$ estimated by ANGSD across a 1.5Mb region of chromosome 10 in {\it Zea mays} ssp. {\it mays} using ANGSD-wrapper. Darker colors indicate a higher density of points. Blue boxes indicate gene annotations provided by a GFF file. \label{fig:theta} }
+\includegraphics[width=0.8\linewidth]{figures/fig1.pdf}
 \end{figure}
 
 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.8\linewidth]{figures/figure3big.pdf}
 \caption{Summary statistics for {\it Zea mays}. Derived site frequency spectra for A. maize and B. teosinte. C. distribution of pairwise nucleotide diversity for maize (blue) and teosinte (orange). Mean values for each taxon are represented by corresponding vertical lines. Pairwise nucleotide diversity results are visualized separately from the interactive graphics and colors were added to A and B using a custom script.}
+\includegraphics[width=0.8\linewidth]{figures/figure3big.pdf}
 \label{fig:figure3}
 \end{figure}
 
-\section*{Results}
+\section*{Results and Discussion}
 As a demonstration of analyses in ANGSD-wrapper, we explore patterns of pairwise nucleotide diversity in a single genomic region of domesticated maize and wild teosinte. 
 We used a subset of the resequenced samples from the Maize HapMap2 project (Table \ref{tab:samples}) and calculated summary statistics using a 10Mb region on chromosome 10 \citep{chia2012maize}. 
 The data are available at \url{https://figshare.com/articles/Example_Data_tar_bz2/2063442} and can be downloaded from within AGNSD-wrapper using teh command 
@@ -191,9 +202,9 @@ None of the genes in this region have been identified as potential domestication
 
 \begin{figure}
 \centering
-\includegraphics[width=0.8\linewidth]{figures/mt4labeled.pdf}
 \caption{Admixture analysis for {\it Zea mays} ssp. {\it mays}, {\it Zea mays} ssp. {\it parviglumis}, and {\it Zea mays} ssp. {\it mexicana} (\textit{mex}). Colors represent the proportion of each individual's genome assigned to one of the {\it K}=4 source populations. 
 Individuals are shown in the same order as Table \ref{tab:samples}. For results using other values of \texit{K} see Figure \ref{fig:suppadmix}.}
+\includegraphics[width=0.8\linewidth]{figures/mt4labeled.pdf}
 \label{fig:admixture}
 \end{figure}
 
@@ -210,6 +221,7 @@ ANGSD-wrapper is under active development to incorporate updates to the ANGSD so
 \section*{Acknowledgments}
 We acknowledge funding support from the US National Science Foundation (IOS-1238014 to JRI and IOS-1339393 to PLM), from a University of Minnesota Doctoral Dissertation Fellowship supporting TJYK, and from the University of California Davis Plant Sciences Department. We thank members of the Ross-Ibarra and Morrell Labs for discussion and software testing. We thank the authors of ANGSD and related programs for answering questions, particularly Matteo Fumagalli and Filipe Vieira. Finally, we would like to thank Felix Andrews for statistical advice, although we did not follow it. 
 \clearpage
+\singlespacing
 \bibliographystyle{apa}
 \bibliography{references}
 
