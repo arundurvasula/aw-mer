@@ -104,7 +104,7 @@ Application of these approaches has led to changes in both experimental design a
 Many popular software packages used by researchers for analysis of comparative resequencing data \citep[see][]{excoffier2006computer} were not designed to handle these novel data types or efficiently analyze the large volumes of data now being generated. 
 Despite the decreasing cost of sequencing, researchers must nonetheless allocate finite resources and balance the depth of sequencing and the breadth of a sample. 
 This poses a challenge for population genetics analysis, which generally requires accurate polymorphism calls in a broad sample \citep{pluzhnikov1996optimal, felsenstein2006accuracy}. 
-While these experimental design challenges in molecular population genetic studies have existed for at least two decade, high throughput sequencing brings the added technical challenges of highly variable coverage, missing data, and high per-nucleotide error rates.
+While these experimental design challenges in molecular population genetic studies have existed for at least two decades, high throughput sequencing brings the added technical challenges of highly variable coverage, missing data, and high per-nucleotide error rates.
 
 A number of tools have recently been published to estimate population genetic descriptive statistics using high throughput sequencing data \citep{garrigan2013popbam, purcell2007plink, danecek2011variant, hutter2006genome}. 
  \citet{korneliussen2014angsd} recently published the software package ANGSD, which enables users to flexibly perform a large number of common population genetic analyses, including estimation of diversity statistics, admixture analysis including Patterson's D statistic \citep{Durand:2011jd}, site frequency spectrum estimation \citep{pmid22911679}, and calculation of neutrality test statistics \citep{korneliussen_calculation_2013}. 
@@ -114,9 +114,9 @@ This permits ANGSD to calculate common population genetic descriptive statistics
 
 Here we present ANGSD-wrapper, a user-friendly interface to ANGSD. 
 ANGSD-wrapper takes the form of a set of configuration files and wrapper scripts (Figure \ref{fig:supp2}) that streamline the execution of multi-step pipelines required for data analysis in ANGSD. 
-ANGSD-wrapper also eases the configuration of ANGSD-related programs such as ngsPopGen \citep{ngsPopGen}, ngsF\citep{vieira2013estimating}, and ngsAdmix \citep{pmid24026093}. 
+ANGSD-wrapper also eases the configuration of ANGSD-related programs such as ngsTools \citep{fumagalli2014ngstools}, ngsF\citep{vieira2013estimating}, ngsAdmix \citep{pmid24026093}, and PCA \citep{fumagalli2013quantifying}. 
 As in ANGSD, ANGSD-wrapper allows users to perform whole genome analysis or analyze a set of user-defined windows across the genome.
-The wrapper scripts are written against a frozen versions of ANGSD and supporting tools for consistency of analysis. 
+The wrapper scripts are written against a frozen versions of ANGSD (v [INSERT VERSION]) and supporting tools for consistency of analysis. 
 Because the large volume of data associated with high throughput sequence analysis is often difficult to visualize, ANGSD-wrapper also provides a suite of interactive visualization tools to plot results and explore patterns at multiple scales.  
 We demonstrate some of the analyses possible using ANGSD-wrapper when applied to low-coverage resequencing using data from domesticated maize and two related wild teosinte subspecies. 
 ANGSD-wrapper is freely available from \url{https://github.com/mojaveazure/angsd-wrapper}.
@@ -149,7 +149,7 @@ These dependent packages are installed automatically upon first run of the visua
 \end{table}
 
 ANGSD-wrapper is divided into scripts associated with analytical approaches implemented in ANGSD and associated software. 
-ANGSD-wrapper provides a common configuration file, \texttt{Common\_Config}, which holds variables that are likely to remain constant across analyses, including identifiers for chromosomal regions and the paths to project directories.
+It provides a common configuration file, \texttt{Common\_Config}, which holds variables that are likely to remain constant across analyses, including identifiers for chromosomal regions and the paths to project directories.
 In ANGSD-wrapper, each method is self-contained in a shell script which uses information from the common configuration file and a method-specific configuration file. 
 Each analysis is run using a simple command:
 
@@ -185,7 +185,7 @@ The Shiny server automatically parses ANGSD output files and creates the resulti
 \section*{Results and Discussion}
 As a demonstration of analyses in ANGSD-wrapper, we explore patterns of pairwise nucleotide diversity in a single genomic region of domesticated maize and wild teosinte. 
 We used a subset of the resequenced samples from the Maize HapMap2 project (Table \ref{tab:samples}) and calculated summary statistics using a 10Mb region on chromosome 10 \citep{chia2012maize}. 
-The data are available at \url{https://figshare.com/articles/Example_Data_tar_bz2/2063442} and can be downloaded from within AGNSD-wrapper using teh command 
+The data are available at \url{https://figshare.com/articles/Example_Data_tar_bz2/2063442} and can be downloaded from within ANGSD-wrapper using the command 
 
 \begin{lstlisting}
 $ angsd-wrapper setup data
@@ -194,7 +194,7 @@ $ angsd-wrapper setup data
 In the following we refer to methods listed in Table \ref{tab:methods} when describing analyses.
 
 We first use the ``SFS'' method to estimate the site frequency spectrum (SFS) of both maize and its wild progenitor \textit{Zea mays} ssp. \textit{parviglumis}, assuming an inbreeding coefficient of $F=1$ for these highly inbred samples. 
-The SFS and diversity statistics were calculated using ancestral states inferred in the ``Ancestral Sequence'' method from a single resequenced genome of \textit{Tripsacum dactyloides}.  
+The SFS and diversity statistics were calculated using ancestral states inferred by the ``Ancestral Sequence'' method from a single resequenced genome of \textit{Tripsacum dactyloides}.  
 We show that the maize SFS is skewed towards more intermediate-frequency variants (Figure \ref{fig:figure3}A-B, Tajima's D of 0.2 and 0.0085 in maize and teosinte, respectively), likely a result of the bottleneck associated with maize domestication \citep{eyre1998investigation, Beissinger031666}.
 Using the ``Thetas'' method we find further evidence of the domestication bottleneck, with mean levels of pairwise nucleotide diversity in this region in maize $\approx 25\%$ lower than in teosinte (0.0061 and 0.0082, respectively; Figure \ref{fig:figure3}C). 
 Using the ``2DSFS method,'' which includes an \fst calculation, we find a mean \fst in this region of 0.116, nearly identical to the  genome-wide value of 0.11 reported in \cite{hufford2012comparative}.   
