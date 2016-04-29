@@ -7,6 +7,14 @@ Beissinger, T.~M., Wang, L., Crosby, K., Durvasula, A., Hufford, M.~B., and
   genome.
 \newblock {\em bioRxiv}.
 
+\bibitem[Burri et~al., 2015]{burri2015linked}
+Burri, R., Nater, A., Kawakami, T., Mugal, C.~F., Olason, P.~I., Smeds, L.,
+  Suh, A., Dutoit, L., Bure{\v{s}}, S., Garamszegi, L.~Z., et~al. (2015).
+\newblock Linked selection and recombination rate variation drive the evolution
+  of the genomic landscape of differentiation across the speciation continuum
+  of ficedula flycatchers.
+\newblock {\em Genome research}, 25(11):1656--1665.
+
 \bibitem[Chang, 2015]{shinythemes}
 Chang, W. (2015).
 \newblock {\em shinythemes: Themes for Shiny}.
@@ -157,6 +165,13 @@ Korneliussen, T., Moltke, I., Albrechtsen, A., and Nielsen, R. (2013).
 Korneliussen, T.~S., Albrechtsen, A., and Nielsen, R. (2014).
 \newblock Angsd: analysis of next generation sequencing data.
 \newblock {\em BMC Bioinformatics}, 15(1):356.
+
+\bibitem[Meyer et~al., 2015]{meyer2015evolutionary}
+Meyer, W.~K., Venkat, A., Kermany, A.~R., de~Geijn, B., Zhang, S., and
+  Przeworski, M. (2015).
+\newblock Evolutionary history inferred from the de novo assembly of a nonmodel
+  organism, the blue-eyed black lemur.
+\newblock {\em Molecular ecology}, 24(17):4392--4405.
 
 \bibitem[Nielsen et~al., 2012]{pmid22911679}
 Nielsen, R., Korneliussen, T., Albrechtsen, A., Li, Y., and Wang, J. (2012).

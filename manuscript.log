@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.6.22)  28 APR 2016 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.6.22)  29 APR 2016 10:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -719,34 +719,34 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 97.
  [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 122.
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+(Font)              <7> on input line 126.
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 []\OT1/cmr/bx/n/10 Interactive
  []
 
-[3] <figures/fig1.pdf, id=141, 575.11684pt x 242.91995pt>
+[4] <figures/fig1.pdf, id=159, 575.11684pt x 242.91995pt>
 File: figures/fig1.pdf Graphic file (type pdf)
 
 <use figures/fig1.pdf>
-Package pdftex.def Info: figures/fig1.pdf used on input line 173.
+Package pdftex.def Info: figures/fig1.pdf used on input line 177.
 (pdftex.def)             Requested size: 364.19667pt x 153.83359pt.
 
-<figures/figure3big.pdf, id=142, 580.2809pt x 373.71136pt>
+<figures/figure3big.pdf, id=160, 580.2809pt x 373.71136pt>
 File: figures/figure3big.pdf Graphic file (type pdf)
 
 <use figures/figure3big.pdf>
-Package pdftex.def Info: figures/figure3big.pdf used on input line 181.
+Package pdftex.def Info: figures/figure3big.pdf used on input line 185.
 (pdftex.def)             Requested size: 364.19667pt x 234.55553pt.
- [4] [5 <./figures/fig1.pdf> <./figures/figure3big.pdf>] <figures/mt4labeled.pd
-f, id=238, 685.88919pt x 298.92397pt>
+ [5 <./figures/fig1.pdf>]
+<figures/mt4labeled.pdf, id=208, 685.88919pt x 298.92397pt>
 File: figures/mt4labeled.pdf Graphic file (type pdf)
 
 <use figures/mt4labeled.pdf>
-Package pdftex.def Info: figures/mt4labeled.pdf used on input line 207.
+Package pdftex.def Info: figures/mt4labeled.pdf used on input line 211.
 (pdftex.def)             Requested size: 364.19667pt x 158.72542pt.
- [6] [7 <./figures/mt4labeled.pdf>]
-(./manuscript.bbl [8
+ [6 <./figures/figure3big.pdf>] [7 <./figures/mt4labeled.pdf>] (./manuscript.bb
+l [8
 
 ]) (./supp.texpdfTeX warning (ext4): destination with the same identifier (name
 {figure.1}) has been already used, duplicate ignored
@@ -754,19 +754,19 @@ Package pdftex.def Info: figures/mt4labeled.pdf used on input line 207.
                    \relax 
 l.8 ...or all methods available in ANGSD-wrapper.}
                                                   
-<figures/Big_Workflow_newAW.pdf, id=310, 1565.1935pt x 1895.42725pt>
+<figures/Big_Workflow_newAW.pdf, id=318, 1565.1935pt x 1895.42725pt>
 File: figures/Big_Workflow_newAW.pdf Graphic file (type pdf)
 
 <use figures/Big_Workflow_newAW.pdf>
 Package pdftex.def Info: figures/Big_Workflow_newAW.pdf used on input line 9.
 (pdftex.def)             Requested size: 455.24411pt x 551.27945pt.
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
-s been already used, duplicate ignored
+ [9]pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
+) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.15 ...=2 (top), K=3 (middle), and K=4 (bottom).}
                                                   
-<figures/admixture.pdf, id=311, 722.7pt x 817.59242pt>
+<figures/admixture.pdf, id=323, 722.7pt x 817.59242pt>
 File: figures/admixture.pdf Graphic file (type pdf)
 
 <use figures/admixture.pdf>
@@ -784,7 +784,7 @@ e ignored
                    \relax 
 l.22 ...d between the maize and teosinte samples.}
                                                   
-<figures/supp3.pdf, id=312, 559.65729pt x 260.15945pt>
+<figures/supp3.pdf, id=324, 559.65729pt x 260.15945pt>
 File: figures/supp3.pdf Graphic file (type pdf)
  <use figures/supp3.pdf>
 Package pdftex.def Info: figures/supp3.pdf used on input line 23.
@@ -805,22 +805,23 @@ Overfull \hbox (7.54723pt too wide) in paragraph at lines 30--58
  [] 
  []
 
-) [9] [10 <./figures/Big_Workflow_newAW.pdf>] [11 <./figures/admixture.pdf>]
-[12 <./figures/supp3.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 230.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
+) [10] [11 <./figures/Big_Workflow_newAW.pdf>] [12 <./figures/admixture.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 234.
+
+[13 <./figures/supp3.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
  (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 230.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 230.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 234.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 230.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
  ) 
 Here is how much of TeX's memory you used:
- 18145 strings out of 494977
- 334570 string characters out of 6180183
- 417895 words of memory out of 5000000
- 20981 multiletter control sequences out of 15000+600000
+ 18154 strings out of 494977
+ 334779 string characters out of 6180183
+ 409959 words of memory out of 5000000
+ 20987 multiletter control sequences out of 15000+600000
  10240 words of font info for 37 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  48i,13n,56p,597b,1055s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -840,10 +841,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on manuscript.pdf (12 pages, 731437 bytes).
+Output written on manuscript.pdf (13 pages, 733389 bytes).
 PDF statistics:
- 507 PDF objects out of 1000 (max. 8388607)
- 406 compressed objects within 5 object streams
- 63 named destinations out of 1000 (max. 500000)
+ 520 PDF objects out of 1000 (max. 8388607)
+ 418 compressed objects within 5 object streams
+ 66 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -111,6 +111,10 @@ A number of tools have recently been published to estimate population genetic de
 ANGSD works directly with the alignment formats produced from standard high throughput sequence analysis pipelines, which removes the need for the user to transform the data into a niche format. 
 One of the most important features of ANGSD is that analyses are integrated over per-site genotype likelihoods, rather than only on pre-determined variable sites. 
 This permits ANGSD to calculate common population genetic descriptive statistics on low-coverage sequencing data, and handle missingness due to variation in coverage. 
+Further, this probablistic framework is appealing to researchers studying non-model organisms where the lack of existing genomic resources or funding prevents the ability to obtain high quality data. 
+Additionally, for many of these non-model organisms, existing tools are not able to take into account biological differences such as non-random mating into their statistical models.
+Recent use of ANGSD in the study of non-model organisms such as the blue-eyed black lemur \citep{meyer2015evolutionary} and \textit{Ficedula} flycatchers \citep{burri2015linked} has allowed population genetic analysis despite using low coverage resequencing data.
+
 
 Here we present ANGSD-wrapper, a user-friendly interface to ANGSD. 
 ANGSD-wrapper takes the form of a set of configuration files and wrapper scripts (Figure \ref{fig:supp2}) that streamline the execution of multi-step pipelines required for data analysis in ANGSD. 
