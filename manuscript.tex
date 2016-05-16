@@ -109,13 +109,13 @@ ANGSD works directly with alignment formats produced from standard high throughp
 One of the most important features of ANGSD is that analyses are integrated over per-site genotype likelihoods, rather than on predetermined polymorphic sites \emph{a priori}. 
 This permits ANGSD to calculate common population genetic descriptive statistics on low-coverage sequencing data, and handle missingness due to variation in coverage. 
 Further, this probabilistic framework is appealing to researchers studying non-model organisms where the lack of existing genomic resources or cost considerations prevent the ability to obtain high quality data. 
-Also, many existing tools do not implement statistical models that account for biological issues such as non-random mating. Recent use of ANGSD highlights these benefits, allowing population genetic analyses in non-model organisms such as the blue-eyed black lemur \citep{meyer2015evolutionary} and \textit{Ficedula} flycatchers \citep{burri2015linked} and inbred lines of wild and cultivated maize \citep{beissinger2015recent}.
+Also, many existing tools do not implement statistical models that account for biological issues such as non-random mating. Recent use of ANGSD highlights these benefits, allowing population genetic analyses in non-model organisms such as the blue-eyed black lemur \citep{meyer2015evolutionary} and \textit{Ficedula} flycatchers \citep{burri2015linked} and inbred lines of wild and cultivated maize \citep{Beissinger031666}.
 
 Here we present ANGSD-wrapper, a user-friendly interface to ANGSD. 
 ANGSD-wrapper takes the form of a set of configuration files and wrapper scripts (Figure \ref{fig:supp2}) that streamline the execution of multi-step pipelines required for data analysis in ANGSD. 
 ANGSD-wrapper also assists with configuration of ANGSD-related programs such as ngsTools \citep{fumagalli2014ngstools}, ngsF\citep{vieira2013estimating}, ngsAdmix \citep{pmid24026093}, and PCA \citep{fumagalli2013quantifying}. 
 As in ANGSD, ANGSD-wrapper allows users to perform whole genome analysis or analyze a set of user-defined windows across the genome.
-The wrapper scripts are written against a frozen versions of ANGSD (v [INSERT VERSION]) and supporting tools for consistency of analysis. 
+The wrapper scripts are written against a frozen versions of ANGSD (v0.902-48-g8b89ba4) and supporting tools for consistency of analysis. 
 Because the large volume of data associated with high throughput sequence analysis is often difficult to visualize, ANGSD-wrapper also provides a suite of interactive visualization tools to plot results and explore patterns at multiple scales.  
 We demonstrate some of the analyses possible using ANGSD-wrapper when applied to low-coverage resequencing using data from domesticated maize and two related wild teosinte subspecies. 
 ANGSD-wrapper is freely available from \url{https://github.com/mojaveazure/angsd-wrapper}.
@@ -193,7 +193,7 @@ In the following we refer to methods listed in Table \ref{tab:methods} when desc
 
 We first use the ``SFS'' method to estimate the site frequency spectrum (SFS) of both maize and its wild progenitor \textit{Zea mays} ssp. \textit{parviglumis}, assuming an inbreeding coefficient of $F=1$ for these highly inbred samples. 
 The SFS and diversity statistics were calculated using ancestral states inferred by the ``Ancestral Sequence'' method from a single resequenced genome of \textit{Tripsacum dactyloides}.  
-We show that the maize SFS is skewed toward intermediate-frequency variants (Figure \ref{fig:figure3}A-B, Tajima's D of 0.2 and 0.0085 in maize and teosinte, respectively), likely a result of the bottleneck associated with maize domestication \citep{eyre1998investigation, beissinger2015recent}.
+We show that the maize SFS is skewed toward intermediate-frequency variants (Figure \ref{fig:figure3}A-B, Tajima's D of 0.2 and 0.0085 in maize and teosinte, respectively), likely a result of the bottleneck associated with maize domestication \citep{eyre1998investigation, Beissinger031666}.
 Using the ``Thetas'' method we find further evidence of the domestication bottleneck, with mean levels of pairwise nucleotide diversity in this region in maize $\approx 25\%$ lower than in teosinte (0.0061 and 0.0082, respectively; Figure \ref{fig:figure3}C). 
 Using the ``2DSFS method,'' which includes an \fst calculation, we find a mean \fst in this region of 0.116, nearly identical to the  genome-wide value of 0.11 reported in \cite{hufford2012comparative}.   
 None of the genes in this region have been identified as potential domestication candidates \cite{hufford2012comparative}, consistent with the lack of extended regions of high \fst in our analysis (Figure \ref{fig:suppfst}).

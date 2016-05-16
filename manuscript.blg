@@ -3,6 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
 The style file: apa.bst
 Database file #1: references.bib
+Warning--I didn't find a database entry for ""
 You've used 38 entries,
             1935 wiz_defined-function locations,
             710 strings with 12263 characters,
@@ -44,3 +45,4 @@ warning$ -- 0
 while$ -- 122
 width$ -- 0
 write$ -- 496
+(There was 1 warning)
