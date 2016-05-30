@@ -1,48 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: manuscript.aux
 The style file: apa.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for ""
-You've used 38 entries,
-            1935 wiz_defined-function locations,
-            710 strings with 12263 characters,
-and the built_in function-call counts, 18274 in all, are:
-= -- 1677
-> -- 1180
-< -- 14
-+ -- 434
-- -- 430
-* -- 1739
-:= -- 3284
-add.period$ -- 119
-call.type$ -- 38
-change.case$ -- 392
-chr.to.int$ -- 38
-cite$ -- 38
-duplicate$ -- 544
-empty$ -- 1028
-format.name$ -- 474
-if$ -- 3405
+You've used 40 entries,
+            1940 wiz_defined-function locations,
+            720 strings with 12596 characters,
+and the built_in function-call counts, 19179 in all, are:
+= -- 1759
+> -- 1200
+< -- 16
++ -- 440
+- -- 436
+* -- 1889
+:= -- 3416
+add.period$ -- 125
+call.type$ -- 40
+change.case$ -- 405
+chr.to.int$ -- 40
+cite$ -- 40
+duplicate$ -- 572
+empty$ -- 1090
+format.name$ -- 484
+if$ -- 3559
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 31
-newline$ -- 195
-num.names$ -- 114
-pop$ -- 344
+missing$ -- 33
+newline$ -- 205
+num.names$ -- 120
+pop$ -- 351
 preamble$ -- 1
-purify$ -- 400
+purify$ -- 413
 quote$ -- 0
-skip$ -- 409
+skip$ -- 431
 stack$ -- 0
-substring$ -- 1041
-swap$ -- 58
+substring$ -- 1121
+swap$ -- 100
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 226
+type$ -- 238
 warning$ -- 0
-while$ -- 122
+while$ -- 130
 width$ -- 0
-write$ -- 496
-(There was 1 warning)
+write$ -- 522

@@ -1,13 +1,13 @@
 \begin{thebibliography}{}
 
-\bibitem[Beissinger et~al., 2016]{Beissinger031666}
+\bibitem[\protect\astroncite{Beissinger et~al.}{2016}]{Beissinger031666}
 Beissinger, T.~M., Wang, L., Crosby, K., Durvasula, A., Hufford, M.~B., and
   Ross-Ibarra, J. (2016).
 \newblock Recent demography drives changes in linked selection across the maize
   genome.
 \newblock {\em bioRxiv}.
 
-\bibitem[Burri et~al., 2015]{burri2015linked}
+\bibitem[\protect\astroncite{Burri et~al.}{2015}]{burri2015linked}
 Burri, R., Nater, A., Kawakami, T., Mugal, C.~F., Olason, P.~I., Smeds, L.,
   Suh, A., Dutoit, L., Bure{\v{s}}, S., Garamszegi, L.~Z., et~al. (2015).
 \newblock Linked selection and recombination rate variation drive the evolution
@@ -15,53 +15,54 @@ Burri, R., Nater, A., Kawakami, T., Mugal, C.~F., Olason, P.~I., Smeds, L.,
   of ficedula flycatchers.
 \newblock {\em Genome research}, 25(11):1656--1665.
 
-\bibitem[Chang, 2015]{shinythemes}
+\bibitem[\protect\astroncite{Chang}{2015}]{shinythemes}
 Chang, W. (2015).
 \newblock {\em shinythemes: Themes for Shiny}.
 \newblock R package version 1.0.1.
 
-\bibitem[Chang et~al., 2015]{shiny}
+\bibitem[\protect\astroncite{Chang et~al.}{2015}]{shiny}
 Chang, W., Cheng, J., Allaire, J., Xie, Y., and McPherson, J. (2015).
 \newblock {\em shiny: Web Application Framework for R}.
 \newblock R package version 0.11.1.
 
-\bibitem[Chia et~al., 2012]{chia2012maize}
+\bibitem[\protect\astroncite{Chia et~al.}{2012}]{chia2012maize}
 Chia, J.-M., Song, C., Bradbury, P.~J., Costich, D., de~Leon, N., Doebley, J.,
   Elshire, R.~J., Gaut, B., Geller, L., Glaubitz, J.~C., et~al. (2012).
 \newblock Maize hapmap2 identifies extant variation from a genome in flux.
 \newblock {\em Nature Genetics}, 44(7):803--807.
 
-\bibitem[Danecek et~al., 2011]{danecek2011variant}
+\bibitem[\protect\astroncite{Danecek et~al.}{2011}]{danecek2011variant}
 Danecek, P., Auton, A., Abecasis, G., Albers, C.~A., Banks, E., DePristo,
   M.~A., Handsaker, R.~E., Lunter, G., Marth, G.~T., Sherry, S.~T., et~al.
   (2011).
 \newblock The variant call format and vcftools.
 \newblock {\em Bioinformatics}, 27(15):2156--2158.
 
-\bibitem[Dowle et~al., 2015]{datatable}
+\bibitem[\protect\astroncite{Dowle et~al.}{2015}]{datatable}
 Dowle, M., Srinivasan, A., Short, T., with contributions~from R~Saporta, S.~L.,
   and Antonyan, E. (2015).
 \newblock {\em data.table: Extension of Data.frame}.
 \newblock R package version 1.9.6.
 
-\bibitem[Durand et~al., 2011]{Durand:2011jd}
+\bibitem[\protect\astroncite{Durand et~al.}{2011}]{Durand:2011jd}
 Durand, E.~Y., Patterson, N., Reich, D., and Slatkin, M. (2011).
 \newblock {Testing for ancient admixture between closely related populations.}
 \newblock {\em Molecular Biology and Evolution}, 28(8):2239--2252.
 
-\bibitem[Ekblom and Galindo, 2011]{ekblom2011applications}
+\bibitem[\protect\astroncite{Ekblom and Galindo}{2011}]{ekblom2011applications}
 Ekblom, R. and Galindo, J. (2011).
 \newblock Applications of next generation sequencing in molecular ecology of
   non-model organisms.
 \newblock {\em Heredity}, 107(1):1--15.
 
-\bibitem[Excoffier and Heckel, 2006]{excoffier2006computer}
+\bibitem[\protect\astroncite{Excoffier and
+  Heckel}{2006}]{excoffier2006computer}
 Excoffier, L. and Heckel, G. (2006).
 \newblock Computer programs for population genetics data analysis: a survival
   guide.
 \newblock {\em Nature Reviews Genetics}, 7(10):745--758.
 
-\bibitem[Eyre-Walker et~al., 1998]{eyre1998investigation}
+\bibitem[\protect\astroncite{Eyre-Walker et~al.}{1998}]{eyre1998investigation}
 Eyre-Walker, A., Gaut, R.~L., Hilton, H., Feldman, D.~L., and Gaut, B.~S.
   (1998).
 \newblock Investigation of the bottleneck leading to the domestication of
@@ -69,51 +70,51 @@ Eyre-Walker, A., Gaut, R.~L., Hilton, H., Feldman, D.~L., and Gaut, B.~S.
 \newblock {\em Proceedings of the National Academy of Sciences},
   95(8):4441--4446.
 
-\bibitem[Fang et~al., 2012]{fang2012megabase}
+\bibitem[\protect\astroncite{Fang et~al.}{2012}]{fang2012megabase}
 Fang, Z., Pyh{\"a}j{\"a}rvi, T., Weber, A.~L., Dawe, R.~K., Glaubitz, J.~C.,
   Gonz{\'a}lez, J. d. J.~S., Ross-Ibarra, C., Doebley, J., Morrell, P.~L., and
   Ross-Ibarra, J. (2012).
 \newblock Megabase-scale inversion polymorphism in the wild ancestor of maize.
 \newblock {\em Genetics}, 191(3):883--894.
 
-\bibitem[Felsenstein, 2006]{felsenstein2006accuracy}
+\bibitem[\protect\astroncite{Felsenstein}{2006}]{felsenstein2006accuracy}
 Felsenstein, J. (2006).
 \newblock Accuracy of coalescent likelihood estimates: do we need more sites,
   more sequences, or more loci?
 \newblock {\em Molecular biology and evolution}, 23(3):691--700.
 
-\bibitem[Fumagalli et~al., 2013]{fumagalli2013quantifying}
+\bibitem[\protect\astroncite{Fumagalli et~al.}{2013}]{fumagalli2013quantifying}
 Fumagalli, M., Vieira, F.~G., Korneliussen, T.~S., Linderoth, T.,
   Huerta-S{\'a}nchez, E., Albrechtsen, A., and Nielsen, R. (2013).
 \newblock Quantifying population genetic differentiation from next-generation
   sequencing data.
 \newblock {\em Genetics}, 195(3):979--992.
 
-\bibitem[Fumagalli et~al., 2014]{fumagalli2014ngstools}
+\bibitem[\protect\astroncite{Fumagalli et~al.}{2014}]{fumagalli2014ngstools}
 Fumagalli, M., Vieira, F.~G., Linderoth, T., and Nielsen, R. (2014).
 \newblock ngstools: methods for population genetics analyses from
   next-generation sequencing data.
 \newblock {\em Bioinformatics}, 30(10):1486--1487.
 
-\bibitem[Gagneur et~al., 2015]{genomeIntervals}
+\bibitem[\protect\astroncite{Gagneur et~al.}{2015}]{genomeIntervals}
 Gagneur, J., Toedling, J., Bourgon, R., and Delhomme, N. (2015).
 \newblock {\em genomeIntervals: Operations on genomic intervals}.
 \newblock R package version 1.22.1.
 
-\bibitem[Garrigan, 2013]{garrigan2013popbam}
+\bibitem[\protect\astroncite{Garrigan}{2013}]{garrigan2013popbam}
 Garrigan, D. (2013).
 \newblock Popbam: tools for evolutionary analysis of short read sequence
   alignments.
 \newblock {\em Evolutionary Bioinformatics Online}, 9:343.
 
-\bibitem[Gentzsch, 2001]{Microsystems):2001:SGE:560889.792378}
+\bibitem[\protect\astroncite{Gentzsch}{2001}]{Microsystems):2001:SGE:560889.792378}
 Gentzsch, W. (2001).
 \newblock Sun grid engine: Towards creating a compute power grid.
 \newblock In {\em Proceedings of the 1st International Symposium on Cluster
   Computing and the Grid}, CCGRID '01, pages 35--, Washington, DC, USA. IEEE
   Computer Society.
 
-\bibitem[{Huber} et~al., 2015]{bioconductor}
+\bibitem[\protect\astroncite{{Huber} et~al.}{2015}]{bioconductor}
 {Huber}, {W.}, {Carey}, J., V., {Gentleman}, {R.}, {Anders}, {S.}, {Carlson},
   {M.}, {Carvalho}, S., B., {Bravo}, C., H., {Davis}, {S.}, {Gatto}, {L.},
   {Girke}, {T.}, {Gottardo}, {R.}, {Hahne}, {F.}, {Hansen}, D., K., {Irizarry},
@@ -124,13 +125,13 @@ Gentzsch, W. (2001).
 \newblock {O}rchestrating high-throughput genomic analysis with {B}ioconductor.
 \newblock {\em Nature Methods}, 12(2):115--121.
 
-\bibitem[Hufford et~al., 2013]{hufford2013genomic}
+\bibitem[\protect\astroncite{Hufford et~al.}{2013}]{hufford2013genomic}
 Hufford, M.~B., Lubinksy, P., Pyh{\"a}j{\"a}rvi, T., Devengenzo, M.~T.,
   Ellstrand, N.~C., and Ross-Ibarra, J. (2013).
 \newblock The genomic signature of crop-wild introgression in maize.
 \newblock {\em PLoS Genetics}.
 
-\bibitem[Hufford et~al., 2012]{hufford2012comparative}
+\bibitem[\protect\astroncite{Hufford et~al.}{2012}]{hufford2012comparative}
 Hufford, M.~B., Xu, X., Van~Heerwaarden, J., Pyh{\"a}j{\"a}rvi, T., Chia,
   J.-M., Cartwright, R.~A., Elshire, R.~J., Glaubitz, J.~C., Guill, K.~E.,
   Kaeppler, S.~M., et~al. (2012).
@@ -138,101 +139,115 @@ Hufford, M.~B., Xu, X., Van~Heerwaarden, J., Pyh{\"a}j{\"a}rvi, T., Chia,
   improvement.
 \newblock {\em Nature Genetics}, 44(7):808--811.
 
-\bibitem[Hutter et~al., 2006]{hutter2006genome}
+\bibitem[\protect\astroncite{Hutter et~al.}{2006}]{hutter2006genome}
 Hutter, S., Vilella, A.~J., and Rozas, J. (2006).
 \newblock Genome-wide dna polymorphism analyses using variscan.
 \newblock {\em BMC Bioinformatics}, 7(1):409.
 
-\bibitem[Jette et~al., 2002]{Jette02slurm:simple}
+\bibitem[\protect\astroncite{Jette et~al.}{2002}]{Jette02slurm:simple}
 Jette, M.~A., Yoo, A.~B., and Grondona, M. (2002).
 \newblock Slurm: Simple linux utility for resource management.
 \newblock In {\em In Lecture Notes in Computer Science: Proceedings of Job
   Scheduling Strategies for Parallel Processing (JSSPP) 2003}, pages 44--60.
   Springer-Verlag.
 
-\bibitem[Jr et~al., 2015]{Hmisc}
+\bibitem[\protect\astroncite{Johnson and Slatkin}{2007}]{johnson2007bias}
+Johnson, P. L.~F. and Slatkin, M. (2007).
+\newblock Accounting for bias from sequencing error in population genetic
+  estimates.
+\newblock {\em Molecular Biology and Evolution}, 25(1):199--206.
+
+\bibitem[\protect\astroncite{Jr et~al.}{2015}]{Hmisc}
 Jr, F. E.~H., with contributions~from Charles~Dupont, and many others. (2015).
 \newblock {\em Hmisc: Harrell Miscellaneous}.
 \newblock R package version 3.17-1.
 
-\bibitem[Korneliussen et~al., 2013]{korneliussen_calculation_2013}
+\bibitem[\protect\astroncite{Korneliussen
+  et~al.}{2013}]{korneliussen_calculation_2013}
 Korneliussen, T., Moltke, I., Albrechtsen, A., and Nielsen, R. (2013).
 \newblock Calculation of tajima's d and other neutrality test statistics from
   low depth next-generation sequencing data.
 \newblock {\em {BMC} Bioinformatics}, 14(1):289.
 
-\bibitem[Korneliussen et~al., 2014]{korneliussen2014angsd}
+\bibitem[\protect\astroncite{Korneliussen et~al.}{2014}]{korneliussen2014angsd}
 Korneliussen, T.~S., Albrechtsen, A., and Nielsen, R. (2014).
 \newblock Angsd: analysis of next generation sequencing data.
 \newblock {\em BMC Bioinformatics}, 15(1):356.
 
-\bibitem[Meyer et~al., 2015]{meyer2015evolutionary}
+\bibitem[\protect\astroncite{Lynch}{2008}]{lynch2008diversity}
+Lynch, M. (2008).
+\newblock Estimation of nucleotide diversity, disequilibrium coefficients, and
+  mutation rates from high-coverage genome-sequencing projects.
+\newblock {\em Molecular Biology and Evolution}, 25(11):2409--2419.
+
+\bibitem[\protect\astroncite{Meyer et~al.}{2015}]{meyer2015evolutionary}
 Meyer, W.~K., Venkat, A., Kermany, A.~R., de~Geijn, B., Zhang, S., and
   Przeworski, M. (2015).
 \newblock Evolutionary history inferred from the de novo assembly of a nonmodel
   organism, the blue-eyed black lemur.
 \newblock {\em Molecular ecology}, 24(17):4392--4405.
 
-\bibitem[Nielsen et~al., 2012]{pmid22911679}
+\bibitem[\protect\astroncite{Nielsen et~al.}{2012}]{pmid22911679}
 Nielsen, R., Korneliussen, T., Albrechtsen, A., Li, Y., and Wang, J. (2012).
 \newblock {{S}{N}{P} calling, genotype calling, and sample allele frequency
   estimation from {N}ew-{G}eneration {S}equencing data}.
 \newblock {\em PLoS ONE}, 7(7):e37558.
 
-\bibitem[Paradis et~al., 2004]{APE}
+\bibitem[\protect\astroncite{Paradis et~al.}{2004}]{APE}
 Paradis, E., Claude, J., and Strimmer, K. (2004).
 \newblock A{PE}: analyses of phylogenetics and evolution in {R} language.
 \newblock {\em Bioinformatics}, 20:289--290.
 
-\bibitem[Pluzhnikov and Donnelly, 1996]{pluzhnikov1996optimal}
+\bibitem[\protect\astroncite{Pluzhnikov and
+  Donnelly}{1996}]{pluzhnikov1996optimal}
 Pluzhnikov, A. and Donnelly, P. (1996).
 \newblock Optimal sequencing strategies for surveying molecular genetic
   diversity.
 \newblock {\em Genetics}, 144(3):1247--1262.
 
-\bibitem[Purcell et~al., 2007]{purcell2007plink}
+\bibitem[\protect\astroncite{Purcell et~al.}{2007}]{purcell2007plink}
 Purcell, S., Neale, B., Todd-Brown, K., Thomas, L., Ferreira, M.~A., Bender,
   D., Maller, J., Sklar, P., De~Bakker, P.~I., Daly, M.~J., et~al. (2007).
 \newblock Plink: a tool set for whole-genome association and population-based
   linkage analyses.
 \newblock {\em The American Journal of Human Genetics}, 81(3):559--575.
 
-\bibitem[{R Core Team}, 2014]{Rcitation}
+\bibitem[\protect\astroncite{{R Core Team}}{2014}]{Rcitation}
 {R Core Team} (2014).
 \newblock {\em R: A Language and Environment for Statistical Computing}.
 \newblock R Foundation for Statistical Computing, Vienna, Austria.
 
-\bibitem[Sarkar, 2008]{lattice}
+\bibitem[\protect\astroncite{Sarkar}{2008}]{lattice}
 Sarkar, D. (2008).
 \newblock {\em Lattice: Multivariate Data Visualization with R}.
 \newblock Springer, New York.
 \newblock ISBN 978-0-387-75968-5.
 
-\bibitem[Skotte et~al., 2013]{pmid24026093}
+\bibitem[\protect\astroncite{Skotte et~al.}{2013}]{pmid24026093}
 Skotte, L., Korneliussen, T.~S., and Albrechtsen, A. (2013).
 \newblock {{E}stimating {I}ndividual {A}dmixture {P}roportions from {N}ext
   {G}eneration {S}equencing {D}ata}.
 \newblock {\em Genetics}.
 
-\bibitem[Staples, 2006]{Staples:2006:TRM:1188455.1188464}
+\bibitem[\protect\astroncite{Staples}{2006}]{Staples:2006:TRM:1188455.1188464}
 Staples, G. (2006).
 \newblock Torque resource manager.
 \newblock In {\em Proceedings of the 2006 ACM/IEEE Conference on
   Supercomputing}, SC '06, New York, NY, USA. ACM.
 
-\bibitem[van Rossum, 2016]{Python}
+\bibitem[\protect\astroncite{van Rossum}{2016}]{Python}
 van Rossum, G. (2016).
 \newblock Python.
 \newblock \url{https://www.python.org}.
 \newblock Accessed: 2016-01-27.
 
-\bibitem[Vieira et~al., 2013]{vieira2013estimating}
+\bibitem[\protect\astroncite{Vieira et~al.}{2013}]{vieira2013estimating}
 Vieira, F.~G., Fumagalli, M., Albrechtsen, A., and Nielsen, R. (2013).
 \newblock Estimating inbreeding coefficients from ngs data: Impact on genotype
   calling and allele frequency estimation.
 \newblock {\em Genome Research}, 23(11):1852--1861.
 
-\bibitem[Xie, 2015]{javascriptDT}
+\bibitem[\protect\astroncite{Xie}{2015}]{javascriptDT}
 Xie, Y. (2015).
 \newblock {\em DT: A Wrapper of the JavaScript Library 'DataTables'}.
 \newblock R package version 0.1.
